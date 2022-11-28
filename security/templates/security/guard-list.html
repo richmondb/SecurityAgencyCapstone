@@ -1,0 +1,65 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Guard List{% endblock %}
+
+{% block main-content %}
+<div class = "content-panel full-row">
+	<div class = "contract-form">
+	<h2>Guard List</h2>
+	
+	<div class = "navigation">
+		<form method = "GET">
+			<div class = "form-flex">
+				<div class = "form-group">
+					<label for = "lname">Last Name</label>
+					<input type = "text" name = "lname" id = "lname" placeholder="Search By Last Name" class = "form-control">
+	 			</div>
+	 			<div class = "form-group">
+	 				<label for = 'fname'>First Name</label>
+					<input type = "text" name = "fname" id = "fname" placeholder="Search By First Name" class = "form-control">
+	 			</div>
+		 		<div class = "form-group">
+		 			<button type = "submit" class = "remove-default-btn btn primary-btn">Search</button>
+		 		</div>
+ 			</div>
+		</form>
+	</div>
+	
+	<table class = "guards-table">
+		<tr>
+			<td>Last Name</td>
+			<td>First Name</td>
+			<td>Age</td>
+			<td>Status</td>
+			<td></td>
+		</tr>
+	{% for guard in page_obj %}
+		<tr>
+			<td>{{guard.last_name}}</td>
+			<td>{{guard.first_name}}</td>
+			<td>{{guard.get_age}}</td>
+			<td>{{guard.has_duty}}</td>
+			<td><a href = "{% url 'guard-view' guard.id %}">View Details</a></td>	
+		</tr>
+	{% endfor %}
+	</table>
+
+	<div class = "page-control">
+		{% if page_obj.has_previous %}
+		<a href = "?page=1">&laquo; First</a>
+		<a href = "?page={{page_obj.previous_page_number}}">Previous</a>
+		{% endif %}
+
+		<span class = "current">
+			Page {{page_obj.number}} of {{page_obj.paginator.num_of_pages}}
+		</span>
+
+		{% if page_obj.has_next %}
+		<a href = "?page={{ page_obj.next_page_number }}">Next</a>
+		<a href = "?page={{page_obj.paginator.num_pages}}">Last &raquo;</a>
+		{% endif %}
+	</div>	
+
+	</div>
+</div>
+{% endblock %}

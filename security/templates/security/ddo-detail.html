@@ -1,0 +1,103 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Duty Detail Order No. {% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		{% if user.is_superuser %}
+		<a href = "{% url 'ddo-list' %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		{% else%}
+		<a href = "{% url 'contract-detail'  ddo.location.get_active_contract.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		{% endif %}
+		<h2>Duty Detail Order No. {{ddo.id}}</h2>
+
+	</div>
+</div>
+
+<div class = 'content-panel'>
+	<div class = "contract-form">
+	<div class = "header">
+		<h5>{{agency_name}}</h5>
+		<p class = "subtext">{{agency_address}}</p>
+		<p class = "subtext">Insert Telephone Number here</p>
+		<p class = "subtext">arclight04@gmail.com</p>
+	</div>
+	<div class = "details">
+		<p>Duty Detail Order No. {{ddo.id}}</p>
+		<p>Date : {{ddo.date_issued}}</p>
+	</div>
+
+	<section class = "references">
+		<ol>
+			<li>References:</li>
+				<ul>
+					<li>Section 4, Rule VII of the 2003 Revised Implementing Rules and regulations of R.A. 5487, as amended; and</li>
+					<li>RA 10591, Comprehensive Firearms and Ammunition Regulation Act.</li>
+				</ul>
+			<li>Purpose of Detail:Post Security Service Duties.</li>
+			<li>Duration/Inclusive Dates of Details:From {{ddo.start_date}} to {{ddo.end_date}}.</li>
+			<li>The following security guard/s (SGs) is/are hereby assigned to render post security serviceduties in place/s indicated and are hereby issued agency/company owned firearms (FAs):</li>
+		</ol>
+
+		<div class = "ddo-report">
+			<div class = "guard-labels">
+				<p>Name</p>
+				<p>Designation</p>
+				<p>Place of Guard Duty</p>
+				<p>Time Shift</p>
+			</div>
+			<div class = "firearm-labels">
+				<p class = "firearm-labels-header">Firearms Information</p>
+				<p>Kind</p>
+				<p>Make</p>
+				<p>Caliber</p>
+				<p>FA's Serial Number</p>
+				<p>Validity of FA's License</p>
+			</div>
+			<div class = "personnel-content">
+				{% for designation in ddo.designations.all %}
+				<p>{{designation.guard}}</p>
+				<p>{{designation.get_designation_type_display}}</p>
+				<p>{{ddo.location}}</p>
+				<p></p>	
+				{% endfor %}
+			</div>
+			<div class = "firearm-content">
+				{% for firearm in fa_list.firearms.all %}
+				<p>{{firearm.get_kind_display}}</p>
+				<p>{{firearm.make}}</p>
+				<p>{{firearm.caliber}}</p>
+				<p>{{firearm.serial_number}}</p>
+				<p>{{validity}}</p>
+				{% endfor %}
+			</div>
+		</div>
+		<ol start = "5">
+			<li>
+				Specific Instructions:
+
+				<ol type = 'a'>
+					<li>Security Guards in this Duty Details Order (DDO) must be in prescribed uniform and shall carry the issued firearms only when they are in actual performance of guard duty within the compound of the establishment or property of their client in the place and time specified in this DDO.</li>
+
+					<li>This Duty Detail Order is not an authority for security guards to carry their issued firearm outside the premises of the specified post/station nor shall the firearm describeherein leave the client post/station. Except under the following circumstances while in the security guards are in the following conduction security services duties, a separateDDO shall be issued with a duration of not more than twenty-four (24) hours</li>
+
+					<ol type = 'i'>
+						<li>While escorting big amount of cash or valuables outside its jurisdiction or areaof operation with or without the use of armored vehicles.</li>
+
+						<li>When transporting agency/company license firearms from agency/company office vault to post and back for posting for routine replacement of firearms,repair and recall of PSA firearms.</li>
+
+					</ol>
+
+					<li>The transport of FAs for routine rotation, posting, repair, etc. beyond 24 hours will require the appropriate Transport Permit from FEO.</li>
+
+					<li>The issued firearms to the guards are license and a copy must be in the possession of the guards.</li>
+
+					<li>For strict compliance.</li>
+			</li>
+		</ol>
+	</section>
+	</div>
+	
+</div>
+{% endblock %}

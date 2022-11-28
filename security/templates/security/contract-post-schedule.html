@@ -1,0 +1,177 @@
+{% extends 'security/security.html' %}
+
+{% block title %}{{post.place}} Schedule{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'contract-location-post' contract.id location.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>{{post.place}} Schedule</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "header">
+		<h3>Schedule</h3>
+	</div>
+		<table class = "table">
+				<tr>
+					<th>Monday</th>
+					{% if post.on_monday %}
+
+					{% for x in post.on_monday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 1 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Tuesday</th>
+					{% if post.on_tuesday %}
+
+					{% for x in post.on_tuesday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 2 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Wednesday</th>
+					{% if post.on_wednesday %}
+
+					{% for x in post.on_wednesday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 3 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Thursday</th>
+					{% if post.on_thursday %}
+
+					{% for x in post.on_thursday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 4 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Friday</th>
+					{% if post.on_friday %}
+
+					{% for x in post.on_friday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 5 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Saturday</th>
+					{% if post.on_saturday %}
+
+					{% for x in post.on_saturday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 6 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+
+					{% endif %}
+				</tr>
+				<tr>
+					<th>Sunday</th>
+					{% if post.on_sunday %}
+
+					{% for x in post.on_sunday %}
+					<td>{{x.shift.start_time|time:"h:i A"}} - {{x.shift.end_time|time:"h:i A"}}</td>
+					<td>Guards Assigned : {{x.number_of_guards}}<br><a href = "{% url 'contract-edit-instruction' contract.id location.id post.id x.shift.id %}">Edit</a>
+					{% endfor %}
+					<td>
+						<form method = "POST" action = "{% url 'reset-day-schedule' post.id 7 %}">
+							{% csrf_token %}
+							<input type = "hidden" name ="next" value = "{{request.path}}">
+							<button type = "submit" class = " remove-default-btn btn destructive-btn">Reset Shift</button>
+						</form>
+					</td>
+
+					{% else %}
+					<td colspan = '2'></td>
+					<td colspan = '2'></td>
+					{% endif %}
+				</tr>
+			</table>
+			<div class = "form-footer">
+				<div class = "form-flex">
+					<form method = "POST" action = "{% url 'contract-post-deassign' location.id post.id %}">
+						{% csrf_token %}
+						<input type = "hidden" name = 'next' value = "{{request.path}}">
+						<button type = "submit" class = "remove-default-btn btn destructive-btn">Reset</button>
+					</form>
+					<a href = '{% url "contract-schedule-quick" contract.id location.id post.id %}' class = 'btn primary-btn'>Assign</a>
+					<a href = "{% url 'contract-location-post' contract.id location.id %}" class = "remove-default-btn btn primary-btn">Next</a>  
+				</div>
+	</div>
+	
+</div>
+{% endblock %}

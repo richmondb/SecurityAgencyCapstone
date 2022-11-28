@@ -1,0 +1,29 @@
+{% extends 'security/security.html' %}
+
+{% block title %}History - {{location}}{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		{% if user.is_superuser %}
+		<a href = "{% url 'ddo-list' %}" class = "return-link"><i class="fa-solid fa-angles-left">
+		{% else %}
+		<a href = "{% url 'home' %}" class = "return-link"><i class="fa-solid fa-angles-left">
+		{% endif %}
+		</i> Back</a>
+		<h2>History - {{location}}</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		{% for ddo in ddos %}
+		<div>
+		Duty Detail Order No. {{ddo.id}} 
+		<p><a href = "{% url 'ddo-detail' ddo.id %}">View Details</a></p>
+		
+		<p>Inclusive Dates : {{ddo.start_date}} - {{ddo.end_date}}</p>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

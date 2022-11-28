@@ -1,0 +1,56 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Assign Security{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-assign' ddo.id post.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Search Firearm</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<form method = "GET" action = "{% url 'search-fa' ddo.id post.id %}">
+			<input type = "hidden" name = 'next' value ="{{request.path}}">
+			<div class = "form-flex">
+				<div class = "form-group">
+					<input type ="number" name = "serial_number" id = "serial_number" class = "form-control" placeholder = "Enter Firearm Serial Number">
+				</div>
+				
+				<button type = "submit" class = "remove-default-btn btn">Search</button>
+			</div>
+		</form>
+	</div>
+
+	<div>
+		<table>
+			<tr>
+				<th colspan="6">Firearms Table</th>
+			</tr>
+			<tr>
+				<th>Serial Number</th>
+				<th>Kind</th>
+				<th>Make</th>
+				<th>Caliber</th>
+				<th>Validity of FA</th>
+			</tr>
+			{% for firearm in fa_list.firearms.all %}
+			<tr>
+				<td class = "txt-center">{{firearm.get_kind_display}}</td>
+				<td>{{firearm.make}}</td>
+				<td>{{firearm.caliber}}</td>
+				<td class ="txt-center">{{firearm.serial_number}}</td>
+				<td class = "txt-center">{{validity}}</td>
+				<td>
+					<form method = "POST" action = "{% url 'remove-firearms' fa_list.id firearm.serial_number %}">
+						{% csrf_token %}
+						<input type = "hidden" name = "next" value = "{{request.path}}">
+						<button type = "submit" class = "remove-default-btn btn destructive-btn">Remove</button>
+					</form>
+				</td>
+			</tr>
+			{% endfor %}
+	</div>
+</div>
+{% endblock %}

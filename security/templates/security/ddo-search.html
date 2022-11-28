@@ -1,0 +1,37 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Assign Security{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-assign' ddo.id post.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>
+		{% block page-title %}
+		
+		{% endblock %}
+		</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<form method = "GET">
+			<div class = "form-flex">
+				<div class = "form-group">
+					<input type ="text" name = "guard_fname" id = "guard_fname" class = "form-control" placeholder = "First Name">
+				</div>
+				<div class = "form-group">
+					<input type ="text" name = "guard_lname" id = "guard_lname" class = "form-control" placeholder = "Last Name">
+				</div>
+				<button type = "submit" class = "remove-default-btn btn">Search</button>
+			</div>
+		</form>
+
+		{% block search-table %}
+
+		{% endblock %}
+
+		
+	</div>
+</div>
+{% endblock %}

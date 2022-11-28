@@ -1,0 +1,35 @@
+{% extends 'security/security.html' %}
+
+{% block title %}My Contracts{% endblock %}
+
+{% block main-content %}
+<div class = "content-panel full-row">
+<div class = "contract-form">
+	<div class = "my-contracts-content">
+		
+		<div class = "active-contracts">
+
+			<h3>Active Contracts</h3>
+			{% if active %}
+			{% for contract in active %}
+			<div class = 'contract'>
+			<p>Contract ID {{contract.id}} - <a href = "{% url 'contract-full-detail' contract.id %}">View Contract Details</a></p>
+			{% for location in contract.locations.all %}
+			<p>{{location}}</p>
+			{% endfor %}
+
+
+			<p>Inclusive Dates {{contract.start_date}} -  {{contract.contract_expiry}}</p>
+			<a href = "{% url 'contract-detail' contract.id %}">View Full Details</a>
+			</div>
+			{% endfor %}
+			{% else %}
+			You have no active contracts
+			{% endif %}		
+		</div>
+		
+	</div>
+	
+</div>
+</div>
+{% endblock %}

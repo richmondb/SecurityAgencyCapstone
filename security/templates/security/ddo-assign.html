@@ -1,0 +1,157 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Remake Assign{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-initial' ddo.id post.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO2 - Remake Assign</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div class = "header">
+		{{post}}
+		</div>
+		<table>
+			<tr>
+				<th>Monday</th>
+				{% for instruction in post.on_monday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				{% for instruction in post.on_tuesday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				{% for instruction in post.on_monday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				{% for instruction in post.on_thursday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					
+					<i class="fa-solid fa-person-military-pointing"></i> {{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Friday</th>
+				{% for instruction in post.on_friday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Saturday</th>
+				{% for instruction in post.on_saturday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Sunday</th>
+				{% for instruction in post.on_sunday %}
+				<td>{{instruction.shift.time_range}}</td>
+				<td>
+					
+					<i class="fa-solid fa-person-military-pointing"></i>{{instruction.number_of_guards}}</td> 
+				{% endfor %}
+			</tr>
+			{% if post.is_armed %}
+			<tr>
+				<td colspan = '2'>Max Firearms Allowed : {{post.location.max_firearms}}</td>
+				<td>Firearms Assigned : </td>
+				<td colspan = '2' style = 'text-align:right;padding-right:80px;'><a href = "{% url 'ddo-assign-firearms' ddo.id post.id %}">Assign Firearms</a></td>
+			</tr>
+			{% endif %}
+		</table>
+
+		<div class = "header">
+			Assign
+		</div>
+		<table>
+			<tr>
+				<th>Monday</th>
+				{% for key, value in monday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				{% for key, value in tuesday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				{% for key, value in wednesday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				{% for key, value in thursday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Friday</th>
+				{% for key, value in friday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Saturday</th>
+				{% for key, value in saturday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Sunday</th>
+				{% for key, value in sunday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+		</table>
+
+		<div class = "form-footer">
+			<a href = "{% url 'ddo-search-security' ddo.id  post.id %}" class = 'btn'>Security</a>
+			<a href = "{% url 'ddo-search-reliever' ddo.id post.id %}" class = 'btn'>Reliever</a>
+		</div>
+
+		<div class = "form-footer">
+			<form method = "POST" action = "">
+				{% csrf_token %}
+				<button type = "submit" class = "remove-default-btn btn primary-btn">
+					Next
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

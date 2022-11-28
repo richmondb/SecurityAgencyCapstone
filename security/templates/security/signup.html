@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %} Create an Account{% endblock %}
+
+{% block content %}
+
+{% include 'navbar.html' %}
+
+<main>
+	<form method = "POST" action = "">
+		{% csrf_token %}
+		<div class = "form-body form-signup">
+			<div class = "form-header">Create an Account</div>
+			<div class = "form-content">
+			
+				<div class = "form-group">
+					<p class = "form-label">{{form.username.label}}
+					</p>
+					{{form.username}}
+				</div>
+
+				<div class = "form-group">
+					<p class = "form-label">{{form.email.label}}
+					</p>
+					{{form.email}}
+				</div>
+
+				<div class = "form-flex">
+					<div class = "form-group">
+						<p class = "form-label">{{form.first_name.label}}
+						</p>	
+						{{form.first_name}}
+					</div>
+					<div class = "form-group">
+						<p class = "form-label">{{form.last_name.label}}
+						</p>	
+						{{form.last_name}}
+					</div>
+				</div>
+				<div class = "form-flex">
+					<div class = "form-group">
+						<p class = "form-label">
+							{{form.birth_date.label}}
+						</p>
+						{{form.birth_date}}
+					</div>
+
+					<div class = 'form-group'>
+						<p class = "form-label">
+							{{form.sex.label}}
+						</p>
+						{{form.sex}}
+					</div>
+				
+					<div class = "form-group">
+						<p class = "form-label">
+							{{form.phone_number.label}}
+						</p>
+						{{form.phone_number}} 
+					</div>
+				</div>
+
+				<div class = "form-group">
+					<p class = "form-label">
+					{{form.organization_name.label}}
+					</p>
+					{{form.organization_name}}
+					{{form.organization_name.errors}}
+				</div>
+				<div class = "form-group">
+					<p class = "form-label">
+					{{form.organization_address.label}}
+					</p>
+					{{form.organization_address}}
+					{{form.organization_address.errors}}
+				</div>
+				<div class = "form-group">
+					<p class = "form-label">
+					{{form.position.label}}
+					</p>
+					{{form.position}}
+					{{form.position.errors}}
+				</div>
+				
+				<div class = "form-group">
+					<p class = "form-label">
+						{{form.password1.label}}
+					</p>
+					{{form.password1}}
+				</div>
+				<div class = "form-group">
+					<p class = "form-label">
+						{{form.password2.label}}
+					</p>
+					{{form.password2}}
+				</div>
+				<div class = "form-group">
+					{{form.errors}}
+				</div>
+				
+			</div>
+
+			<div class = "form-group">
+				<button type = "submit" class ="remove-default-btn primary-btn form-submit">Submit</button>
+			</div>
+		</div>
+	</form>
+</main>
+
+
+{% endblock %}

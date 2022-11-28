@@ -1,0 +1,62 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO {{ddo.id}} - Schedule{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{{previous}}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Duty Detail Order No. {{ddo.id}} - Schedule</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div class = "header">Inclusive Dates : {{ddo.start_date}} - {{ddo.end_date}}</div>
+		
+		<table>
+			<tr>
+				<th>Monday</th>
+				{% for key, value in monday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				{% for key, value in tuesday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				{% for key, value in wednesday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				{% for key, value in thursday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Friday</th>
+				{% for key, value in friday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Saturday</th>
+				{% for key, value in saturday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Sunday</th>
+				{% for key, value in sunday.items %}
+					<td>{{key}} - {{value}}</td>	
+				{% endfor %}
+			</tr>
+		</table>
+	</div>
+</div>
+{% endblock %}

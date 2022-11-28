@@ -1,0 +1,44 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Something{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'guard-list' %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>{{guard}}</h2>
+	</div>
+</div>
+<div class = 'content-panel'>
+	<div class = "guard-detail">
+		<div class = "base-profile">
+			<div></div>
+			<div>
+				<h3>{{guard.get_full_name}}</h3>
+				<p>Age : {{guard.get_age}}</p>
+			</div>
+		</div>
+		<div class = "base-info">
+			<p><b>Highest Educational Attainment</b> : {{guard.get_highest_education_display}}</p>
+			<p><b>Birth Date</b> : {{guard.birth_date}}</p>
+			<p><b>Sex</b> : {{guard.get_sex_display}}</p>
+			<p><b>Working Status</b> : {{guard.has_duty}}</p>
+		</div>
+		{% if user.is_superuser%}
+		<div class = "admin-info">
+			<p><b>NBI Clearance ID</b> : {{guard.nbi_clearance_id}}</p>
+			<p><b>Phone Number</b> : {{guard.phone_number}}</p>
+			<p><b>SSS</b> : {{guard.sss}}</p>
+			<p><b>Residence Address</b> : {{guard.residence_address}}</p>
+			<p><b>Highest Educational Attainment</b> : {{guard.get_highest_education_display}}</p>
+			<p><b>Security Guard License Issued Date</b> : {{guard.lesp_issued_date}}</p>
+
+			<div class = "schedule">
+				
+			</div>
+		</div>
+		{% endif %}
+
+	</div>
+</div>
+{% endblock %}

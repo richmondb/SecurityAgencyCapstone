@@ -1,0 +1,103 @@
+{% extends 'security/ddo-search.html' %}
+
+{% block page-title %}
+DDO Assign Reliever
+{% endblock %}
+
+{% block search-table %}
+<div class = "form-group">
+	<table>
+		<tr>
+		<th colspan = '5'>Security Guard List</th>
+		</tr>
+		<tr>
+			<th>ID</th>
+			<th>Last Name</th>
+			<th>First Name</th>
+			<th>Details</th>
+			<th></th>
+		</tr>
+		{% for guard in page_obj %}
+		<tr>
+		<td class = "txt-center">{{guard.id}}</td>
+		<td>{{guard.last_name}}</td>
+		<td>{{guard.first_name}}</td>
+		<td class = "txt-center"><a href = "{% url 'guard-view' guard.id %}">View Details</a></td>
+		<td class = "txt-center"><a href = "{% url 'ddo-assign-reliever' ddo.id post.id guard.id %}">Assign</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+</div>
+
+<div class = "page-control">
+	{% if page_obj.has_previous %}
+	<a href = "?page=1">&laquo; First</a>
+	<a href = "?page={{page_obj.previous_page_number}}">Previous</a>
+	{% endif %}
+
+	<span class = "current">
+		Page {{page_obj.number}} of {{page_obj.paginator.num_of_pages}}
+	</span>
+
+	{% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">next</a>
+    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+	{% endif %}
+
+</div>
+<div></div>
+<div>
+	<table>
+		<tr>
+			<th>Monday</th>
+			{% for key, value in monday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Tuesday</th>
+			{% for key, value in tuesday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Wednesday</th>
+			{% for key, value in wednesday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Thursday</th>
+			{% for key, value in thursday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Friday</th>
+			{% for key, value in friday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Saturday</th>
+			{% for key, value in saturday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th>Sunday</th>
+			{% for key, value in sunday.items %}
+			<td>{{key}}</td>
+			<td>{{value}}</td>
+			{% endfor %}
+		</tr>
+	</table>
+</div>
+
+{% endblock %}

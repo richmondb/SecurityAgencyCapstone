@@ -1,0 +1,36 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Active Contracts{% endblock %}
+
+{% block main-content %}
+<div class = "content-panel full-row">
+	<div class = "contract-form">
+	<h2>Active Contracts</h2>
+	
+	{% if contracts.count == 0 %}
+	<p>No recent requests</p>
+	{% else %}
+	<div class = "contract-table">	
+		<div class = "contract-table-header">
+			<p>Contract ID</p>
+			<p>Client Full Name</p>
+			<p class = "txt-center">Locations</p>
+			<p class = "txt-center"># of Guards</p>
+			<p class = "txt-center">Expiry</p>
+			<p class = "txt-center">Link</p>
+		</div>
+		{% for contract in contracts %}
+
+			<p>Contract ID {{contract.id}}</p>
+			<p>{{contract.client}}</p>
+			<p class = 'txt-center'>{{contract.locations.count}}</p>
+			<p class = "txt-center">{{contract.num_of_guards}}</p>
+			<p>Expiry : {{contract.contract_expiry}}</p>
+			<p class = "txt-center"><a href = "{% url 'contract-full-detail' contract.id %}">Contract Details</a></p>
+			
+		{% endfor %} 
+	</div>
+	{% endif %}
+	</div>
+</div>
+{% endblock %}

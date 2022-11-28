@@ -1,0 +1,79 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Locations{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'contract-location' contract.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>{{location.name}} Posts</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "header">
+		<h3>{{location.name}} posts</h3>
+	</div>
+	<div>
+		<table>
+			<tr>
+				<th>Guardpost Name</th>
+				<th>Security Type</th>
+				<th>Number of Guards</th>
+				<th>Edit</th>
+				<th>Remove Post</th>
+			</tr>
+			{% if location.posts.all %}
+			{% for post in location.posts.all %}
+			<tr>
+				<td>{{post.place}}</td>
+				<td class ='txt-center'>
+				{% if post.is_armed%}
+				Armed
+				{% else %}
+				Unarmed
+				{% endif %}
+				</td>
+				<td class = "txt-center">{{post.guards}}</td>
+				<td class = 'txt-center'><a href = "{% url 'contract-post-schedule' contract.id location.id post.id %}">Edit Schedule</a></td>
+				<td class ='txt-center'>
+					<form method = "POST" action = "{% url 'remove-post' post.id %}">
+						{% csrf_token %}
+						<input type="hidden" name="next" value = "{{request.path}}">
+						<button type ="submit" class = "remove-default-btn btn destructive-btn">Remove</button>
+					</form>
+				</td>
+			</tr>
+			{% endfor %}
+			{% else %}
+			<tr>
+				<td class = "table-empty" colspan = "5">No Posts Added</td>
+			</tr>
+			{% endif %}
+		</table>
+	</div>
+	<div class = 'post-form'>
+		<form method = "POST" action = "">
+			{% csrf_token %}
+				<div class = "header">
+					<h4>Add Posts</h4>
+				</div>
+				<div class = "form-group">
+					{{form.place.label}}
+					{{form.place}}
+					{{form.place.errors}}
+				</div>
+				<div class = "form-group">
+					{{form.is_armed.label}}
+					{{form.is_armed}}
+					{{form.is_armed.errors}}					
+				</div>
+				<div class = 'form-footer'>
+					<button type = "submit" class = "remove-default-btn btn primary-btn">Add Post</button>
+				</div>
+		</form>
+	</div>
+	<div class = "form-footer">
+		<a href = "{% url 'contract-location' contract.id%}" class = "btn primary-btn">Next</a>
+	</div>
+</div>
+{% endblock %}

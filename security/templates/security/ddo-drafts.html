@@ -1,0 +1,32 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Drafts{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-list' %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO2 - Drafts</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		{% for ddo in ddos %}
+		<p>Draft : Duty Detail Order No. {{ddo.id}}
+		</p>
+		<form method = "POST" action = "{% url 'ddo-delete' ddo.id %}">
+			{% csrf_token %}
+			<div class = "form-flex">
+				<div>
+					<a href = "{{ddo.link}}" class = "btn">Resume</a>
+				</div>
+				<div>
+					<input type = "hidden" name = 'next' value = "{{request.path}}">
+					<button type = "submit" class = "remove-default-btn btn destructive-btn">Delete</button>
+				</div>
+			</div>
+		</form>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

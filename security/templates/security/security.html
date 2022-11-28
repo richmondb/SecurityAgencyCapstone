@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include 'dashboard-nav.html' %}
+<div class = "main-container">
+	<aside class = "side-nav">
+		
+		{% if user.is_superuser %}
+		<a href = "{% url 'job-request-list' %}"><i class="fa-solid fa-suitcase"></i>Job Requests</a>
+		<a href = "{% url 'active-contracts' %}"><i class="fa-solid fa-file-contract"></i>Active Contracts</a>
+		<a href = "{% url 'add-guard' %}"><i class="fa-solid fa-user-shield"></i>Add Security Guard</a>
+		<a href = "{% url 'guard-list' %}"><i class="fa-solid fa-person-military-pointing"></i>Security Guard List</a>
+		<a href = "{% url 'ddo-list' %}"><i class="fa-solid fa-file-signature"></i>Issue DDO</a>
+
+		{% else %}
+		<a href = "{% url 'home' %}"><i class="fa-solid fa-house-chimney"></i>Home</a>
+		
+		<a href = "{% url 'contract' %}"><i class="fa-solid fa-suitcase"></i>Create Job Request</a>
+
+		<a href = "{% url 'account' %}"><i class="fa-solid fa-user"></i>Account Details</a>
+
+		{% endif %}
+
+		
+	</aside>
+		{% block main-content %}
+		
+		{% endblock %}
+	
+</div>
+{% endblock %}

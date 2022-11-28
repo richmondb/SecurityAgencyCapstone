@@ -1,0 +1,68 @@
+{% extends 'security/security.html' %}
+
+{% block title %} Create Contract {% endblock %}
+
+{% block main-content %}
+			
+<div class = "content-panel full-row">
+	<div class = 'contract-form'>
+		{% if not  contract %}
+		<div class = "header">
+			Create Job Request
+			<p class = "subtext">Please ensure you have the following documents at the ready <br>
+			[insert list of documents]</p>
+		</div>
+		<div class = "header">
+			
+		</div>
+		<form method = "POST" action = " ">
+			{% csrf_token %}
+			<div class = 'form-footer'>
+			<button type ="submit" class = 'remove-default-btn btn primary-btn'>Proceed</button>
+			</div>
+		</form>
+		{% else %}
+		<div class  = "header">
+			<h4>Resume Request Draft</h4>
+			<p class = 'subtext'>Your previous progress had been saved.</p>
+		</div>
+
+		<div class = "previous-draft">
+			<p>Contract ID {{contract.id}}</p>
+			<div>
+				<p>Locations Included : {{contract.locations.count}}</p>
+			</div>
+			<div>
+				<a href = "{{contract.link}}" class = "btn">Resume</a>
+			</div>
+		</div>
+
+		{% endif %}
+		<div class = "header">
+			Previous Requests 
+			<p class = "subtext">You can monitor the status of your request here</p>
+		</div>
+		<div>
+			<table class = "txt-center">
+				<tr>
+					<td>Contract ID</td>
+					<td>Locations</td>
+					<td># of Guards</td>
+					<td>Status</td>
+					<td>Link</td>
+				</tr>
+				{% for pending in pending_list %}
+				<tr>
+					<td>{{pending.id}}</td>
+					<td>{{pending.locations.count}}</td>
+					<td>{{pending.num_of_guards}}</td>
+					<td>{{pending.get_status_display}}</td>
+					<td><a href = "{{pending.link}}" >View</a></td>
+				</tr>
+				{%  endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

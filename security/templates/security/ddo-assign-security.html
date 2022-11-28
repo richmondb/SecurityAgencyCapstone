@@ -1,0 +1,120 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Assign Guard{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-search-security' ddo.id post.id  %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO2 Assign - {{guard}}</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div>
+			<table>
+				<tr>
+					<th>Monday</th>
+					{% for key, value in monday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Tuesday</th>
+					{% for key, value in tuesday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Wednesday</th>
+					{% for key, value in wednesday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Thursday</th>
+					{% for key, value in thursday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Friday</th>
+					{% for key, value in friday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Saturday</th>
+					{% for key, value in saturday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+				<tr>
+					<th>Sunday</th>
+					{% for key, value in sunday.items %}
+					<td>{{key}}</td>
+					<td>{{value}}</td>
+					{% endfor %}
+				</tr>
+			</table>
+		</div>
+		<div class = "with-underline">
+			<form method = "POST" action = "">
+				{% csrf_token %}
+				<div class = "form-group">
+					{{form.shift.label}}
+					{{form.shift}}
+					{{form.shift.errors}}
+				</div>
+				<div class = "form-group">
+					{{form.day_off.label}}
+					{{form.day_off}}
+					{{form.day_off.errors}}
+				</div>
+		
+				<div class = "form-footer">
+					<button type = "submit" class = 'remove-default-btn btn primary-btn'>Save</button>
+				</div>
+			</form>
+		</div>
+		<div>
+			<div class = "header">
+				<h4>Designation Details</h4>
+
+				<table>
+					<tr>
+						<td>Guard</td>
+						<td>Designation Type</td>
+						<td>Remove</td>
+					</tr>
+					{% if ddo.designations.all %}
+					{% for designation in ddo.designations.all %}
+					<tr>
+						<td>{{designation.guard}}</td>
+						<td>{{designation.get_designation_type_display}}</td>
+						<td>
+							<form method = "POST" action = "{% url 'remove-designation' designation.id %}">
+								{% csrf_token %}
+								<input type ='hidden' name ="next" value = "{{request.path}}">
+								<button type = "submit" class = "remove-default-btn btn destructive-btn">Remove</button> 
+							</form>
+						</td>
+					</tr>
+					{% endfor %}
+					{% else %}
+					<tr>
+						<td class = "table-empty" colspan = 4>No assignments yet</td>
+					</tr>
+					{% endif %}
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

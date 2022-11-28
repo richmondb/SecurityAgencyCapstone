@@ -1,0 +1,73 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Issue Duty Detail Order{% endblock %}
+
+{% block main-content %}
+
+<div class = "content-panel full-row">
+	<div class = "contract-form">
+	
+	<h2>Duty Detail Order</h2>
+
+	{% for contract in contracts %}
+	<div class = "contract-card">
+
+		<div class = 'contract-label'>
+			<p>Contract ID {{contract.id}}</p>
+			<p>Client : {{contract.client}}<br><br>Inclusive Dates : {{contract.start_date}} - {{contract.contract_expiry}}</p>
+		</div>
+		{% for location in contract.locations.all %}
+			<div class = "location-card">
+			<p class = "location">{{location}}</p>
+
+			<div class = "post-assignment">
+			{% for post in location.posts.all %}
+				<p>{{post.place}}</p>
+				<p>
+				{% if post.is_armed %}
+				Armed
+				{% else %}
+				Unarmed
+				{% endif %}
+				</p>
+
+				<p>{{post.guards}}</p>
+				<p>
+				{% if post.status == 0 %}
+				No assigned duty
+				{% elif post.status == 1 %}
+				<a href = "{% url 'ddo-detail' post.get_recent_ddo %}">View Details</a>
+				{% elif post.status == 2 %}
+				Future
+				{% endif %}
+				</p>
+				<p>
+					{% if post.status == 1 %}
+					<a href = "{% url 'ddo-schedule' post.get_recent_ddo post.id %}">View Schedule</a>
+					{% endif %}
+				</p>
+				<form method = "POST" action = "{% url 'ddo-create' location.id post.id %}">
+					{% csrf_token %}
+					<button type = "submit" class = 'remove-default-btn btn primary-btn'>Assign</button>
+				</form>
+				
+			{% endfor %}
+			</div>
+			<a href = "{% url 'ddo-drafts' location.id %}">Show All Drafts</a>
+			<a href = "{% url 'ddo-history' location.id %}">Show History</a>
+		{% if location.previous_draft %}
+		<div class = "previous-draft">
+			<p>Previous Draft : </p>
+			<p>DDO ID {{location.previous_draft.id}}</p>
+			<a href = "{{location.previous_draft.link}}" class = "btn">Resume</a>
+		</div>
+		{% endif %}		
+
+		</div>
+		{% endfor %}
+		
+	</div>
+	{% endfor %}
+	</div>
+</div>
+{% endblock %}

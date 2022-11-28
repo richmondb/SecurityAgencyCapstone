@@ -1,0 +1,61 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Contract ID {{contract.id}}{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'home' %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Contract ID : {{contract.id}}</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div class = "contract-card">
+
+		<div class = 'contract-label'>
+			<p>Contract ID {{contract.id}}</p>
+			<p>Client : {{contract.client}}<br><br>Inclusive Dates : {{contract.start_date}} - {{contract.contract_expiry}}</p>
+		</div>
+		{% for location in contract.locations.all %}
+			<div class = "location-card">
+			<p class = "location">{{location}}</p>
+
+			<div class = "post-assignment">
+			{% for post in location.posts.all %}
+				<p>{{post.place}}</p>
+				<p>
+				{% if post.is_armed %}
+				Armed
+				{% else %}
+				Unarmed
+				{% endif %}
+				</p>
+
+				<p>{{post.guards}}</p>
+				<p>
+				{% if post.status == 0 %}
+				No assigned duty
+				{% elif post.status == 1 %}
+				<a href = "{% url 'ddo-detail' post.get_recent_ddo %}">View Details</a>
+				{% elif post.status == 2 %}
+				Future
+				{% endif %}
+				</p>
+				<p>
+					{% if post.status == 1 %}
+					<a href = "{% url 'ddo-schedule' post.get_recent_ddo post.id %}">View Schedule</a>
+					{% endif %}
+				</p>
+				<p></p>
+			{% endfor %}
+			</div>
+			<a href = "{% url 'ddo-history' location.id %}">Show History</a>
+
+		</div>
+		{% endfor %}
+		
+	</div>
+	</div>
+</div>
+{% endblock %}

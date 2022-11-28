@@ -1,0 +1,66 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Initial Settings{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-list'  %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO - Initial Settings</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div class = "header">
+			<h4>DDO Initial Settings</h4>
+		</div>
+
+		<form method = "POST" action = "">
+			{% csrf_token %}
+			<div class = "form-group">
+				<label for = "contract">Contract ID</label>
+				<input type = "text" value = "{{post.location.get_active_contract.id}}" class = 'form-control' disabled name = "contract" id = "contract">
+			</div>
+			<div class = "form-group">
+				<label for = "client">Client Full Name</label>
+				<input type = "text" value = "{{post.location.get_active_contract.client.get_full_name}}" class = 'form-control' disabled name = "location" id = "location">
+			</div>
+			<div class = 'form-flex'>
+				<div class = "form-group">
+					<label for = "location">Contract Start Date</label>
+					<input type = "text" value = "{{post.location.get_active_contract.start_date}}" class = 'form-control' disabled name = "location" id = "location">
+				</div>
+				
+				<div class = "form-group">
+					<label for = "post">Contract Expiry Date</label>
+					<input type = "text" value = "{{post.location.get_active_contract.contract_expiry}}" class = 'form-control' disabled name = "post" id = "post">
+				</div>
+			</div>
+			<div class = 'form-flex'>
+				<div class = "form-group">
+					<label for = "location">Location</label>
+					<input type = "text" value = "{{post.location}}" class = 'form-control' disabled name = "location" id = "location">
+				</div>
+				<div class = "form-group">
+					<label for = "post">Post</label>
+					<input type = "text" value = "{{post.place}}" class = 'form-control' disabled name = "post" id = "post">
+				</div>
+			</div>
+			<div class = "form-group">
+				{{form.start_date.label}}
+				{{form.start_date}}
+				{{form.start_date.errors}}
+			</div>
+
+			<div class = "form-group">
+				{{form.validity.label}}
+				{{form.validity}}
+				{{form.validity.errors}}
+			</div>
+			<div class = "form-footer">
+			<button type ="submit" class = "remove-default-btn btn primary-btn">Next</button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

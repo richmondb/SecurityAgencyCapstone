@@ -1,0 +1,36 @@
+{% extends 'security/security.html' %}
+
+{% block title %}My Locations{% endblock %}
+
+{% block main-content %}
+<div class = "content-panel full-row">
+	<div class = "contract-form">
+		<h2>Job Requests</h2>
+		{% if contracts.count == 0 %}
+		<p>No recent </p>
+		{% else %}
+		<div class = "contract-table">	
+			<div class = "contract-table-header">
+				<p>Contract ID</p>
+				<p>Client Full Name</p>
+				<p class = "txt-center">Locations</p>
+				<p class = "txt-center"># of Guards</p>
+				<p class = "txt-center">Start Date</p>
+				<p class = "txt-center">Status</p>
+				<p class = "txt-center">Link</p>
+			</div>
+			{% for contract in contracts %}
+
+				<p>Contract ID {{contract.id}}</p>
+				<p>{{contract.client}}</p>
+				<p class = 'txt-center'>{{contract.locations.count}}</p>
+				<p class = "txt-center">{{contract.num_of_guards}}</p>
+				<p class = "txt-center">{{contract.start_date}}</p>
+				<p class = 'txt-center'>{{contract.get_status_display}}</p>
+				<p class = "txt-center"><a href = "{{contract.link}}">View Details</a></p>
+			{% endfor %} 
+		</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Finalize{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-assign' ddo.id post.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO2 - Finalize</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<div class = "form-flex">
+			<div class = "form-group">
+				<label for = "start_date">Start Date</label>
+				<input type = "text" disabled  id = "start_date" class = "form-control" placeholder = '{{ddo.start_date}}'>
+			</div>
+			<div class = "form-group">
+				<label for = "end_date">End Date</label>
+				<input type = "text" disabled  id = "start_date" class = "form-control" placeholder = '{{ddo.end_date}}'>
+			</div>
+		</div>
+
+		<div class = "ddo-report">
+			<div class = "guard-labels">
+				<p>Name</p>
+				<p>Designation</p>
+				<p>Place of Guard Duty</p>
+				<p>Time Shift</p>
+			</div>
+			<div class = "firearm-labels">
+				<p class = "firearm-labels-header">Firearms Information</p>
+				<p>Kind</p>
+				<p>Make</p>
+				<p>Caliber</p>
+				<p>FA's Serial Number</p>
+				<p>Validity of FA's License</p>
+			</div>
+			<div class = "personnel-container">
+
+				{% for designation in ddo.designations.all %}
+				<div class = "personnel-content">
+					<p>{{designation.guard}}</p>
+					<p>{{designation.get_designation_type_display}}</p>
+					<p class = "ddo-shift"></p>
+					<p class = "ddo-location">{{ddo.location}}</p>
+				</div>
+				{% endfor %}
+			</div>
+			<div class = "firearm-container">
+				{% for firearm in firearm_list.firearms.all %}
+				<div class = "firearm-content">
+					<p>{{firearm.get_kind_display}}</p>
+					<p>{{firearm.make}}</p>
+					<p>{{firearm.caliber}}</p>
+					<p>{{firearm.serial_number}}</p>
+					<p>{{validity}}</p>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class = "form-footer">
+			<form method = "POST" action = " ">
+				{% csrf_token %}
+				<div class = "confirmation">
+					<input type = "checkbox" name = "agree" class = "check" value = "save">
+					<p>Finalize Contents</p>
+				</div>
+				<button type = "submit" class = "remove-default-btn btn primary-btn">Save</button>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

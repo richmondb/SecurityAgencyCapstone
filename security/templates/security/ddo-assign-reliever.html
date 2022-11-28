@@ -1,0 +1,82 @@
+{% extends 'security/security.html' %}
+
+{% block title %}DDO2 - Assign Guard{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-search-reliever' ddo.id post.id  %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>DDO2 Assign Reliever - {{guard}}</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+	<div>
+		<table>
+			<tr>
+				<th>Monday</th>
+				{% for key, value in monday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Tuesday</th>
+				{% for key, value in tuesday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Wednesday</th>
+				{% for key, value in wednesday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Thursday</th>
+				{% for key, value in thursday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Friday</th>
+				{% for key, value in friday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Saturday</th>
+				{% for key, value in saturday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+			<tr>
+				<th>Sunday</th>
+				{% for key, value in sunday.items %}
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				{% endfor %}
+			</tr>
+		</table>
+	</div>
+		<form method = "POST" action = "">
+			{% csrf_token %}
+			<div class = "form-group">
+				{{form.instruction.label}}
+				{{form.instruction}}
+				{{form.instruction.errors}}
+			</div>
+			<p>Hold Ctrl + Click to Select Multiple objects</p>
+	
+			<div class = "form-footer">
+				<button type = "submit" class = 'remove-default-btn btn primary-btn'>Save</button>
+			</div>
+		</form>	
+	</div>
+</div>
+{% endblock %}

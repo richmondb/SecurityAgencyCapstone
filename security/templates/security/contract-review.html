@@ -1,0 +1,236 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Contract Review{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'contract-location' contract.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Contract Review</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "header">
+		<h4>Security Services Agreement Contract</h4>
+		<p class = "subtext">The details of the contract is as follows : </p>
+	</div>
+	<section>
+		<div class = "header">
+			<h5>Section 1<br><br> Scope of Responsibility</h5>
+		</div>
+		<p class = "agreement-text">This AGREEMENT is made and entered into the Day of {{contract.start_date}} by and between <br>{{contract.client.get_full_name}} and SIKYUrity Agency</p>
+
+		
+		<div class = "contract-list">
+			<ol>
+				<li>The Amazing Security Services Corp. shall furnish security guard(s) at the premises located at the following area of responsibilities ( Section II).  The guard(s) will be in uniform and armed, unless stated otherwise. They will provide security to persons and property in the premises. All services shall be performed in accordance with applicable laws and ordinances.</li>
+
+				<li>The Guard(s) shall be employees of the Contractor. The Contractor shall be responsible for the hiring, supervision, scheduling, and compensation of the Guard(s). The Guard(s) shall not for any purpose be deemed to be employees of the Client</li>
+
+				<li>The Contractor agrees to indemnify and hold harmless the Client, its affiliates, officers, directors, employees and agents from all liability and damages, including cost of defense and reasonable attorneys' fees, which it or they may incur as a result of injury or damages sustained by any person arising out of the negligence or misconduct of the Contractor, its employees, or agents. The liability of the Contractor to the Client, its affiliates, officers, directors, employees, and agents shall be limited to One Million Philippine Pesos (₱1,000,000.00) per occurrence, with a Two Million Philippine Pesos (₱2,000,000.00) annual aggregate.</li>
+
+				<li>The Contractor shall maintain comprehensive general liability insurance on an occurrence basis, covering itself and its employees performing services pursuant to this Agreement in the minimum amounts of One Million Philippine Pesos (₱1,000,000.00) per occurrence, with a Two Million Philippine Pesos (₱2,000,000.00) annual aggregate, with coverage for contractual liability. The Contractor shall also maintain workers’ compensation insurance for its employees. Prior to the performance of services pursuant to this Agreement, the Contractor or its insurer will provide the Client with a Certificate of Insurance showing that such coverages are in effect.</li>
+
+				<li>The Client shall provide details of their Social Security System details for insurance and a copy of their latest NBI Clearance to certify that the client is not involved in any pending criminal proceedings in the Philippines at the time of submission.</li>
+			</ol>
+		</div>
+	</section>
+	<section>
+		<div class = "header">
+			<h5>Section 2<br><br> Area of Responsibilities</h5>
+		</div>
+			<table class = 'table'>
+				<tr>
+					<th>Location Name</th>
+					<th>Address</th>
+					<th>Number of Guards</th>
+				</tr>
+				{% for location in locations %}
+				<tr>
+					<td>{{location.name}}</td>
+					<td>{{location.address}}</td>
+					<td>{{location.number_of_guards}}</td>
+				</tr>
+				{% endfor %}
+			</table>
+	</section>
+	<section>
+		<div class = "header">
+			<h5>Section 3<br><br>Qualifications of the Service Provider</h5>
+		</div>						
+		<p class = "agreement-text">The qualifications of the contractor are:</p>
+
+		<div class = "contract-list">
+			<ol type = "A">
+				<li>Personnel have at least three (3) years of experience in providing security services to a government agency.</li>
+				<li>Personnel are members of the Philippine Association of Detective and Protective Agency Operators (PADPAO) in good and active standing;</li>
+				<li>Personnel are duly licensed and registered Service Contractor with the Department of Labor and Employment;</li>
+				<li>Personnel are duly registered with the Securities and Exchange Commission, Department of Trade and Industry, or Cooperative Development Authority;</li>
+				<li>Personnel are duly registered with the Social Security System (SSS), Home Development; Mutual Fund (PAGIBIG) and Philippine Health Insurance Corporation (PHILHEALTH).</li>
+				<li>Personnel are duly registered with the Bureau of Internal Revenue; Net Financial Contracting Capacity at least equal to the ABC or Committed Line of Credit at least equal to 10% of ABC; and</li>
+				<li>Personnel are duly registered with the Bureau of Internal Revenue; Net Financial Contracting Capacity at least equal to the ABC or Committed Line of Credit at least equal to 10% of ABC; and</li>
+			</ol>
+		</div>
+	</section>
+
+	<section>
+		<div class = "header">
+			<h5>Section 4<br><br>Terms of Payment</h5>
+		</div>						
+		
+		<div class = "contract-list">
+			<ol type = "A">
+				<li>Payments shall be made on a monthly basis, until the 31st of December 2022, subject to submission of billing statement and other supporting documents by the Contractor. Services shall only be billed based on the actual services rendered to the Client; hence, may be computed by a fraction of a month, </li>
+				<li>Should there be any wage or mandated benefit (e.g. SSS, PAG-IBIG and PHILHEALTH) increase in favor of the assigned security personnel subsequent to the execution of the Contract pursuant to a Law, Executive Order, Decree, or Wage Order, the Contractor must inform the Client in writing of the wage increase to allow the latter to undertake the appropriate measures to address the same before its implementation, subject to the accounting and auditing rules and regulations and upon showing actual payment made to their employees.</li>
+				<li>C.	The Contractor shall furnish with the Client the monthly billing, together with copies of payroll, remittances (with official receipt of SSS, PAG-IBIG and PHILHEALTH) and other state insurance fund contributions for all security personnel assigned, every 15th of the month. Should the Contractor fail to comply, the Client shall withhold the payment for the current month until the latter shall have complied with subject requirement.</li>
+			</ol>				
+		</div>
+	</section>
+
+	<section>	
+		<div class = "header">
+			<h5>Section 5<br><br>Work Schedule</h5>
+		</div>
+
+		{% for location in locations %}
+			{% for post in location.post_children %}
+			<div class = "contract-schedule-table">
+				<div class = "contract-schedule-title">{{location.name}}</div>
+					<div class ="contract-header">Day</div>
+					<div class ="contract-header">Timeslot</div>
+					
+					<div>
+						Monday
+					</div>
+					<div class = "flex-row">
+					{% for instruction in post.on_monday %}
+						<div class = "timeslot">
+							<div>
+							{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+							</div>		
+							<div>
+							<div>Guards : {{instruction.number_of_guards}}</div>
+							</div>
+						</div>
+					{% endfor %}
+					</div>
+
+					<div>
+						Tuesday
+					</div>
+					<div class = "flex-row">
+						{% for instruction in post.on_tuesday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+					<div>
+						Wednesday
+					</div>
+
+					<div class = "flex-row">
+						{% for instruction in post.on_wednesday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				
+
+					<div>
+						Thursday
+					</div>
+					<div class = "flex-row">
+						{% for instruction in post.on_thursday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+
+
+					<div>
+						Friday
+					</div>
+					<div class = "flex-row">
+						{% for instruction in post.on_friday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+	
+					<div>
+						Saturday
+					</div>
+					<div class = "flex-row">
+						{% for instruction in post.on_saturday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+		
+					{% if post.sunday %}
+					<div>
+						Sunday
+					</div>
+					<div class = "flex-row">
+						{% for instruction in post.on_sunday %}
+							<div class = "timeslot">
+								<div>
+								{{instruction.shift.start_time|time:"h:i A"}} - {{instruction.shift.end_time|time:"h:i A"}}
+								</div>		
+								<div>
+								<div>Guards : {{instruction.number_of_guards}}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+					{% endif %}
+			
+			</div>
+			{% endfor %}
+			{% endfor %}
+	</section>
+	<div class = "form-footer">
+		<div class = "header">
+			<h4>Do you agree with the contents of the contract?</h4>
+		</div>
+		<div class ='form-flex' style = 'gap:40px;'>
+			<a href = "#" class = "btn destructive-btn">Cancel</a>
+			<a href = "{% url 'contract-location' contract.id %}" class = "btn">Go Back</a>
+			<form method ="POST" action = "">
+				{% csrf_token %}
+				<button type = "submit" class = 'remove-default-btn btn primary-btn'>Agree</button>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

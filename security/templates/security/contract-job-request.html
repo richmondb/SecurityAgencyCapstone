@@ -1,0 +1,98 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Contract Job Request{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'contract-location' contract.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Create Job Request</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "header">
+		<h4>Job Request Form</h4>
+		<p class = 'subtext'>Please Supply the Following Details</p>
+	</div>
+	<div class = "contract-form">
+		<form method = "POST" action = '#'>
+			{% csrf_token %}
+			<div class = "with-underline">
+				<div class = "form-group">
+					{{form.start_date.label}}
+					{{form.start_date}}
+					{{form.start_date.errors}}
+				</div>
+				<div class = "form-group">
+					{{form.daily_wage.label}}
+					{{form.daily_wage}}
+					{{form.daily_wage.errors}}
+				</div>
+				<div class= "form-flex">
+					<div class = 'form-group'>
+						{{form.years.label}}
+						{{form.years}}
+						{{form.years.errors}}
+					</div>
+					<div class = 'form-group'>
+						{{form.months.label}}
+						{{form.months}}
+						{{form.months.errors}}
+					</div>
+				</div>
+			</div>
+			<p>Locations Included : </p>
+			{% for location in contract.locations.all %}
+				<div class = "form-flex">
+					<div class = 'form-group'>
+						<label for = 'location_id{{forloop.counter'>Location ID</label>
+						<input type = "text" name = "location_id{{forloop.counter}}" value = "{{location.id}}" disabled class = "form-control">
+					</div>
+					<div class = 'form-group'>
+						<label for = "location_number_of_guards{{forloop.counter}}">Number of Guards</label>
+						<input type = 'text' value = "{{location.number_of_guards}}" class = "form-control" disabled>
+					</div>
+
+				</div>
+				<div class = 'form-group'>
+					<label for = 'location_name{{forloop.counter'>Location Name</label>
+					<input type ="text" class = 'form-control' name = "location_name{{forloop.counter}}" value = '{{location.name}}' disabled>
+				</div>
+				<div class = 'form-group'>
+					<label for = 'location_name{{forloop.counter'>Address</label>
+					<input type ="text" class = 'form-control' name = "location_name{{forloop.counter}}" value = '{{location.address}}' disabled>
+				</div>
+				<div class = 'form-group'>
+				<a href = '#'>Modify Location Details</a>
+				</div>
+			{% endfor %} 
+			
+			<div class = "header">
+				<h4>Account Details</h4>
+			</div>
+			<div class = "contract-form">
+				<div class = 'with-underline'>
+					<div class = "form-group">
+						<label for = "full_name">Client Full Name</label>
+						<input type ="text" disabled value = "{{user.get_full_name}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+					<div class = "form-group">
+						<label for = "full_name">Organization Name</label>
+						<input type ="text" disabled value = "{{user.organization_name}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+					<div class = "form-group">
+						<label for = "full_name">Organization Address</label>
+						<input type ="text" disabled value = "{{user.organization_address}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+				</div>
+			</div>
+
+
+			<div class = "form-footer">
+				<button type = 'submit' class = "remove-default-btn btn primary-btn">
+				Submit
+			</button>
+		</form> 
+	</div>
+</div>
+{% endblock %}

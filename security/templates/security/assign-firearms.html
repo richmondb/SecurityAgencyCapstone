@@ -1,0 +1,23 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Assign Firearms{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'ddo-post-list' location.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Assign Firearms</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "contract-form">
+		<form method = "GET" action = "{% url 'firearm-search' location.id post.id %}">
+			<input type = "hidden" name ="next" value = "{{request.path}}">
+			<div class ="form-group">
+				<label for = "serial_number">Enter Firearm Serial Number</label>
+				<input id = "serial_number" name = 'serial_number' type = "text" placeholder = "Search Firearm" class = 'form-control' style = "width:80%;">
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

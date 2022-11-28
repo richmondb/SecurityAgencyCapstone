@@ -1,0 +1,27 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Something{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'guard-view' guard.id %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>{{guard}}</h2>
+	</div>
+</div>
+<div class = 'content-panel'>
+	<div class = "contract-form">
+		<form method = "POST" action = "">
+			{% csrf_token %}
+			<div class = "form-group">
+				{{form.designation_type.label}}
+				{{form.designation_type}}
+				{{form.designation_type.errors}}
+			</div>
+			<div class = "form-footer">
+				<button type = "submit" class = "remove-default-btn btn primary-btn">Save</button>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock %}

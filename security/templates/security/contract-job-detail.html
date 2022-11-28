@@ -1,0 +1,144 @@
+{% extends 'security/security.html' %}
+
+{% block title %}Contract Job Request{% endblock %}
+
+{% block main-content %}
+<div class = " content-panel">
+	<div class = "contract-header-nav">
+		<a href = "{% url 'home' %}" class = "return-link"><i class="fa-solid fa-angles-left"></i> Back</a>
+		<h2>Job Request Details</h2>
+	</div>
+</div>
+<div class = "content-panel">
+	<div class = "header">
+		<h4>Job Request Form</h4>
+		{% if user.is_superuser%}
+		<p class = 'subtext'>Waiting for approval</p>
+		{% else %}
+		<p class = 'subtext'>Request is being evaluated by the admin</p>
+		{% endif %}
+	</div>
+	<div class = "contract-form">
+			<div class = "header">
+				<h4>Job Request Details</h4>
+
+			</div>
+			<div class = "with-underline">
+				<div class = "form-flex">
+					<div class = "form-group">
+						<label for = "start_date">Requested Start Date</label>
+						<input type = 'text' value = "{{contract.start_date}}" class = "form-control" disabled name = "start_date" id = "start_date">
+					</div>
+					<div class = "form-group">
+						<label for = "expiry_date">Expiration Date</label>
+						<input type = 'text' value = "{{contract.contract_expiry}}" class = "form-control" disabled name = "expiry_date" id = "expiry_date">
+					</div>					 
+				</div>
+				<div class = "form-group">
+						<label for = "daily_wage">Daily Wage (In Peso)</label>
+						<input type = "text" value = "{{contract.daily_wage}}" disabled class = "form-control" name = "daily_wage" id = "daily_wage">
+				</div>				
+			</div>
+			<div class = 'with-underline'>
+			<div class = "header">
+				<h4>Locations</h4>
+				<p class = "subtext">Indicated Locations that require security services</p>
+			</div>
+			{% for location in contract.locations.all %}
+				<div class = "form-flex">
+					<div class = 'form-group'>
+						<label for = 'location_id{{forloop.counter'>Location ID</label>
+						<input type = "text" name = "location_id{{forloop.counter}}" value = "{{location.id}}" disabled class = "form-control">
+					</div>
+					<div class = 'form-group'>
+						<label for = "location_number_of_guards{{forloop.counter}}">Number of Guards</label>
+						<input type = 'text' value = "{{location.number_of_guards}}" class = "form-control" disabled>
+					</div>
+
+				</div>
+				<div class = 'form-group'>
+					<label for = 'location_name{{forloop.counter'>Location Name</label>
+					<input type ="text" class = 'form-control' name = "location_name{{forloop.counter}}" value = '{{location.name}}' disabled>
+				</div>
+				<div class = 'form-group'>
+					<label for = 'location_name{{forloop.counter'>Address</label>
+					<input type ="text" class = 'form-control' name = "location_name{{forloop.counter}}" value = '{{location.address}}' disabled>
+				</div>
+				
+			{% endfor %} 
+			</div>
+			
+			<div class = "header">
+				<h4>Client Information</h4>
+			</div>
+			<div class = 'with-underline'>
+					<div class = "form-group">
+						<label for = "full_name">Client Full Name</label>
+						<input type ="text" disabled value = "{{contract.client.get_full_name}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+					<div class = "form-group">
+						<label for = "full_name">Office / Organization Name</label>
+						<input type ="text" disabled value = "{{contract.client.organization_name}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+					<div class = "form-group">
+						<label for = "full_name">Office / Organization Address</label>
+						<input type ="text" disabled value = "{{contract.client.organization_address}}" name = 'full_name' id = 'full_name' class = "form-control">
+					</div>
+					<div class = 'form-group'>
+						<label for = "position">Position in Office / Organization</label>
+						<input type = 'text' class = "form-control" value = "{{contract.client.position}}" disabled name = "position" id = "position">
+					</div>
+					{% if user.is_superuser %}
+					<div class = "form-flex">
+						<div class = "form-group">
+							<label for = "dob">Date Of Birth</label>
+							<input type ="text" disabled value = "{{contract.client.birth_date}}" name = 'dob' id = 'dob' class = "form-control">
+						</div>
+						<div class = "form-group">
+							<label for = "age">Age</label>
+							<input type = "text" disabled value = "{{contract.client.get_age}}" class = "form-control" name  = "age" id = "age">
+						</div>
+						<div class = "form-group">
+							<label for = "sex">Sex</label>
+							<input type = "text" name = 'sex' value = "{{contract.client.get_sex_display}}" id = "sex" disabled class = "form-control"> 
+						</div>
+					</div>
+
+					<div class  = "form-flex">
+					<div class = "form-group">
+						<label for = "email">Email</label>
+						<input type = "text" name = 'sex' value = "{{contract.client.email}}" id = "email" disabled class = "form-control" name = "email" id = "email"> 
+					</div>
+					<div class = "form-group">
+						<label for = "phone_number">Phone Number</label>
+						<input type = "text" name = 'sss' id = "sss" value = "{{contract.client.phone_number}}" id = "phone_number" disabled class = "form-control"> 
+					</div>
+					</div>
+					<div class = "form-group">
+						<label for = "sss">SSS ID</label>
+						<input type = "text" name = 'sex' value = "{{contract.client.sss}}" id = "sex" disabled class = "form-control"> 
+					</div>
+					{% endif %}
+			</div>
+
+			{% if user.is_superuser %}
+			<div class = "txt-center">
+				<p>Accepting will send a contract form to the client containing the details above</p>
+			</div>	
+			<div class = "form-flex">
+			<form method = "POST" action = "#">
+				{% csrf_token %}
+				<button type = "submit" class = "remove-default-btn btn destructive-btn">Deny</button>
+			</form>
+			<form method = "POST" action = " ">
+				{% csrf_token %}
+				<button type = 'submit' class = "remove-default-btn btn primary-btn">
+				Accept
+				</button>
+			</form>
+			</div>
+			{% endif %}
+		</form> 
+	</div>
+</div>
+{% endblock %}
