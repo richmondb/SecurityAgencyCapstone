@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'security',
 ]
 
@@ -80,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'securityagency',
-        'USER': 'riku',
-        'PASSWORD': 'database',
+        'USER': 'root',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '3306',
     }
