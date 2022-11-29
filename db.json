@@ -1,1 +1,3481 @@
-[{"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2022-08-09T08:55:29.217Z", "user": 1, "content_type": 14, "object_id": "1", "object_repr": "Polytechnic University of the Philippines", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2022-08-09T09:00:23.592Z", "user": 1, "content_type": 6, "object_id": "2", "object_repr": "Marc Stephen Gabres", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2022-08-09T09:00:31.228Z", "user": 1, "content_type": 15, "object_id": "2", "object_repr": "Monday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2022-08-09T09:00:31.230Z", "user": 1, "content_type": 15, "object_id": "1", "object_repr": "Monday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2022-08-09T09:00:31.231Z", "user": 1, "content_type": 15, "object_id": "4", "object_repr": "Tuesday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2022-08-09T09:00:31.232Z", "user": 1, "content_type": 15, "object_id": "3", "object_repr": "Tuesday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2022-08-09T09:00:31.233Z", "user": 1, "content_type": 15, "object_id": "6", "object_repr": "Wednesday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2022-08-09T09:00:31.235Z", "user": 1, "content_type": 15, "object_id": "5", "object_repr": "Wednesday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2022-08-09T09:00:31.237Z", "user": 1, "content_type": 15, "object_id": "8", "object_repr": "Thursday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2022-08-09T09:00:31.238Z", "user": 1, "content_type": 15, "object_id": "7", "object_repr": "Thursday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2022-08-09T09:00:31.239Z", "user": 1, "content_type": 15, "object_id": "10", "object_repr": "Friday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2022-08-09T09:00:31.240Z", "user": 1, "content_type": 15, "object_id": "9", "object_repr": "Friday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2022-08-09T09:00:31.241Z", "user": 1, "content_type": 15, "object_id": "12", "object_repr": "Saturday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2022-08-09T09:00:31.242Z", "user": 1, "content_type": 15, "object_id": "11", "object_repr": "Saturday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2022-08-09T09:00:31.244Z", "user": 1, "content_type": 15, "object_id": "14", "object_repr": "Sunday - 20:00:00", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2022-08-09T09:00:31.246Z", "user": 1, "content_type": 15, "object_id": "13", "object_repr": "Sunday - 08:00:00", "action_flag": 3, "change_message": ""}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add content type", "content_type": 4, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change content type", "content_type": 4, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete content type", "content_type": 4, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view content type", "content_type": 4, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add session", "content_type": 5, "codename": "add_session"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change session", "content_type": 5, "codename": "change_session"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete session", "content_type": 5, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view session", "content_type": 5, "codename": "view_session"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add user", "content_type": 6, "codename": "add_customuser"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change user", "content_type": 6, "codename": "change_customuser"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete user", "content_type": 6, "codename": "delete_customuser"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view user", "content_type": 6, "codename": "view_customuser"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add agency information", "content_type": 7, "codename": "add_agencyinformation"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change agency information", "content_type": 7, "codename": "change_agencyinformation"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete agency information", "content_type": 7, "codename": "delete_agencyinformation"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view agency information", "content_type": 7, "codename": "view_agencyinformation"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add contract", "content_type": 8, "codename": "add_contract"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change contract", "content_type": 8, "codename": "change_contract"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete contract", "content_type": 8, "codename": "delete_contract"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view contract", "content_type": 8, "codename": "view_contract"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add ddo", "content_type": 9, "codename": "add_ddo"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change ddo", "content_type": 9, "codename": "change_ddo"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete ddo", "content_type": 9, "codename": "delete_ddo"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view ddo", "content_type": 9, "codename": "view_ddo"}}, {"model": "auth.permission", "pk": 37, "fields": {"name": "Can add designation", "content_type": 10, "codename": "add_designation"}}, {"model": "auth.permission", "pk": 38, "fields": {"name": "Can change designation", "content_type": 10, "codename": "change_designation"}}, {"model": "auth.permission", "pk": 39, "fields": {"name": "Can delete designation", "content_type": 10, "codename": "delete_designation"}}, {"model": "auth.permission", "pk": 40, "fields": {"name": "Can view designation", "content_type": 10, "codename": "view_designation"}}, {"model": "auth.permission", "pk": 41, "fields": {"name": "Can add firearm", "content_type": 11, "codename": "add_firearm"}}, {"model": "auth.permission", "pk": 42, "fields": {"name": "Can change firearm", "content_type": 11, "codename": "change_firearm"}}, {"model": "auth.permission", "pk": 43, "fields": {"name": "Can delete firearm", "content_type": 11, "codename": "delete_firearm"}}, {"model": "auth.permission", "pk": 44, "fields": {"name": "Can view firearm", "content_type": 11, "codename": "view_firearm"}}, {"model": "auth.permission", "pk": 45, "fields": {"name": "Can add guard", "content_type": 12, "codename": "add_guard"}}, {"model": "auth.permission", "pk": 46, "fields": {"name": "Can change guard", "content_type": 12, "codename": "change_guard"}}, {"model": "auth.permission", "pk": 47, "fields": {"name": "Can delete guard", "content_type": 12, "codename": "delete_guard"}}, {"model": "auth.permission", "pk": 48, "fields": {"name": "Can view guard", "content_type": 12, "codename": "view_guard"}}, {"model": "auth.permission", "pk": 49, "fields": {"name": "Can add instruction", "content_type": 13, "codename": "add_instruction"}}, {"model": "auth.permission", "pk": 50, "fields": {"name": "Can change instruction", "content_type": 13, "codename": "change_instruction"}}, {"model": "auth.permission", "pk": 51, "fields": {"name": "Can delete instruction", "content_type": 13, "codename": "delete_instruction"}}, {"model": "auth.permission", "pk": 52, "fields": {"name": "Can view instruction", "content_type": 13, "codename": "view_instruction"}}, {"model": "auth.permission", "pk": 53, "fields": {"name": "Can add location", "content_type": 14, "codename": "add_location"}}, {"model": "auth.permission", "pk": 54, "fields": {"name": "Can change location", "content_type": 14, "codename": "change_location"}}, {"model": "auth.permission", "pk": 55, "fields": {"name": "Can delete location", "content_type": 14, "codename": "delete_location"}}, {"model": "auth.permission", "pk": 56, "fields": {"name": "Can view location", "content_type": 14, "codename": "view_location"}}, {"model": "auth.permission", "pk": 57, "fields": {"name": "Can add shift", "content_type": 15, "codename": "add_shift"}}, {"model": "auth.permission", "pk": 58, "fields": {"name": "Can change shift", "content_type": 15, "codename": "change_shift"}}, {"model": "auth.permission", "pk": 59, "fields": {"name": "Can delete shift", "content_type": 15, "codename": "delete_shift"}}, {"model": "auth.permission", "pk": 60, "fields": {"name": "Can view shift", "content_type": 15, "codename": "view_shift"}}, {"model": "auth.permission", "pk": 61, "fields": {"name": "Can add post", "content_type": 16, "codename": "add_post"}}, {"model": "auth.permission", "pk": 62, "fields": {"name": "Can change post", "content_type": 16, "codename": "change_post"}}, {"model": "auth.permission", "pk": 63, "fields": {"name": "Can delete post", "content_type": 16, "codename": "delete_post"}}, {"model": "auth.permission", "pk": 64, "fields": {"name": "Can view post", "content_type": 16, "codename": "view_post"}}, {"model": "auth.permission", "pk": 65, "fields": {"name": "Can add firearm assignment", "content_type": 17, "codename": "add_firearmassignment"}}, {"model": "auth.permission", "pk": 66, "fields": {"name": "Can change firearm assignment", "content_type": 17, "codename": "change_firearmassignment"}}, {"model": "auth.permission", "pk": 67, "fields": {"name": "Can delete firearm assignment", "content_type": 17, "codename": "delete_firearmassignment"}}, {"model": "auth.permission", "pk": 68, "fields": {"name": "Can view firearm assignment", "content_type": 17, "codename": "view_firearmassignment"}}, {"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "security", "model": "customuser"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "security", "model": "agencyinformation"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "security", "model": "contract"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "security", "model": "ddo"}}, {"model": "contenttypes.contenttype", "pk": 10, "fields": {"app_label": "security", "model": "designation"}}, {"model": "contenttypes.contenttype", "pk": 11, "fields": {"app_label": "security", "model": "firearm"}}, {"model": "contenttypes.contenttype", "pk": 12, "fields": {"app_label": "security", "model": "guard"}}, {"model": "contenttypes.contenttype", "pk": 13, "fields": {"app_label": "security", "model": "instruction"}}, {"model": "contenttypes.contenttype", "pk": 14, "fields": {"app_label": "security", "model": "location"}}, {"model": "contenttypes.contenttype", "pk": 15, "fields": {"app_label": "security", "model": "shift"}}, {"model": "contenttypes.contenttype", "pk": 16, "fields": {"app_label": "security", "model": "post"}}, {"model": "contenttypes.contenttype", "pk": 17, "fields": {"app_label": "security", "model": "firearmassignment"}}, {"model": "sessions.session", "pk": "7bl0zp2ew3m7u4r3yt56p36ub3esddk5", "fields": {"session_data": ".eJxVjDsOwjAQBe_iGln-rINDSZ8zRLveBQeQLcVJhbg7iZQC2jcz761GXJc8rk3mcWJ1UV6dfjfC9JSyA35guVedalnmifSu6IM2PVSW1_Vw_w4ytrzV0Ti4AXDvBG3qyQozBqZg2EG3oZDOVjoXrItgQvQ2MXn2hIDiGdXnC-MnOBY:1oLL7o:tBvJ5Ngf6xZsrDZqlDoQYysZ0vO_vCrC8k59mSxfvjs", "expire_date": "2022-08-23T09:02:08.458Z"}}, {"model": "sessions.session", "pk": "tbrjz3dh5hwhubxfejsy9v0a5ztdlnmt", "fields": {"session_data": ".eJxVjEEOwiAQRe_C2pB2ShnGpXvPQIYBpGpoUtqV8e7apAvd_vfefynP21r81tLip6jOqlen3y2wPFLdQbxzvc1a5rouU9C7og_a9HWO6Xk53L-Dwq186xAZOwCCESUzB3GcOUNnRrJIKCguIfQAKHYw1nFgKySSsqFMYVDvD_WcOHI:1oLKsl:sCrIwqZhqp-5AisW-3YyFWY_N5z-M4CVlyq_Vqd0DKw", "expire_date": "2022-08-23T08:46:35.023Z"}}, {"model": "security.customuser", "pk": 1, "fields": {"password": "pbkdf2_sha256$320000$jNkYTCAtUhskZlUgD11Wlm$fbdasqXYUfvxPn3feEzb+RyLraiSH0+kuN809vVRnYc=", "last_login": "2022-08-09T08:47:59.929Z", "is_superuser": true, "username": "VincentVollachia", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2022-08-09T08:46:30.524Z", "phone_number": null, "birth_date": null, "sex": "M", "organization_name": null, "organization_address": null, "position": null, "groups": [], "user_permissions": []}}, {"model": "security.customuser", "pk": 3, "fields": {"password": "pbkdf2_sha256$320000$IrEib9gTQ4npRS7LOdMPiw$EZahZUrHsdgP3M7tH6kzAnqqXMtXVHgZ+XhhRmXcPGE=", "last_login": "2022-08-09T09:02:08.455Z", "is_superuser": false, "username": "RikuDola", "first_name": "Marc Stephen", "last_name": "Gabres", "email": "arclight04@gmail.com", "is_staff": false, "is_active": true, "date_joined": "2022-08-09T09:01:58.848Z", "phone_number": "09202750407", "birth_date": "2001-08-01", "sex": "M", "organization_name": "Polytechnic University of the Philippines", "organization_address": "1016 Anonas, Sta. Mesa, Maynila, Kalakhang Maynila", "position": "President", "groups": [], "user_permissions": []}}, {"model": "security.contract", "pk": 2, "fields": {"client": 3, "issued_date": "2022-08-09", "start_date": "2022-08-01", "years": 1, "months": null, "daily_wage": 450.0, "is_finished": true, "status": 3, "link": "/contract/2/full"}}, {"model": "security.location", "pk": 3, "fields": {"owner": 3, "name": "Polytechnic University of the Philippines", "address": "1016 Anonas, Sta. Mesa, Maynila, Kalakhang Maynila", "include": false, "contracts": [2]}}, {"model": "security.ddo", "pk": 1, "fields": {"date_issued": "2022-08-09T09:13:57.465Z", "start_date": null, "location": 3, "operations_manager": "Riku Dola", "validity": 0, "link": "/ddo/1/post/2/initial/", "is_finished": false}}, {"model": "security.shift", "pk": 15, "fields": {"day": 1, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 16, "fields": {"day": 1, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 17, "fields": {"day": 2, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 18, "fields": {"day": 2, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 19, "fields": {"day": 3, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 20, "fields": {"day": 3, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 21, "fields": {"day": 4, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 22, "fields": {"day": 4, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 23, "fields": {"day": 5, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 24, "fields": {"day": 5, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 25, "fields": {"day": 6, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 26, "fields": {"day": 6, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.shift", "pk": 27, "fields": {"day": 7, "start_time": "08:00:00", "end_time": "20:00:00"}}, {"model": "security.shift", "pk": 28, "fields": {"day": 7, "start_time": "20:00:00", "end_time": "08:00:00"}}, {"model": "security.guard", "pk": 12, "fields": {"first_name": "Theresia", "last_name": "Astrea", "birth_date": "2001-01-01", "sex": "F", "residence_address": "2213-B F Zobel 1200  Makati City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09004357880", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "12-3456789-0", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 13, "fields": {"first_name": "Reinhardt", "last_name": "Astrea", "birth_date": "2001-01-01", "sex": "M", "residence_address": "62 Old Samson Road  Quezon City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09942379923", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "12-3456789-0", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 14, "fields": {"first_name": "Julius", "last_name": "Euclius", "birth_date": "2001-01-01", "sex": "M", "residence_address": "154 Shaw Boulevard Corner 29 de Agosto Street  Mandaluyong City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09917163917", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "12-3456789-0", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 15, "fields": {"first_name": "Mamiya", "last_name": "Takuji", "birth_date": "2001-01-01", "sex": "M", "residence_address": "2921 Taft Avenue 1300  Pasay City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09467593691", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "12-3456789-0", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 16, "fields": {"first_name": "Crusch", "last_name": "Karsten", "birth_date": "2001-01-01", "sex": "F", "residence_address": "2/F Building 12 Ccmc CompoundVeterans Center  Taguig City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09593215700", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "25-5664303-3", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 17, "fields": {"first_name": "Yuuki", "last_name": "Minakami", "birth_date": "2001-01-01", "sex": "F", "residence_address": "Dr A Santos Avenue 1700  Paranaque City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09332193794", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "52-8064963-3", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 18, "fields": {"first_name": "Ash", "last_name": "Ketchum", "birth_date": "2001-01-01", "sex": "M", "residence_address": "340 A. Amang Rodriguez Ave. Manggahan  Pasig City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09902763875", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "31-5524945-9", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 19, "fields": {"first_name": "Childe", "last_name": "Tartaglia", "birth_date": "2001-01-01", "sex": "M", "residence_address": "1129 Quirino Highway Kaligayahan Novaliches 1124  Quezon City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09533291703", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "58-1361043-7", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 20, "fields": {"first_name": "Takuru", "last_name": "Miyashiro", "birth_date": "2001-01-01", "sex": "M", "residence_address": "167 Biak-Na-Bato  Quezon City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09791538238", "highest_education": 2, "lesp_issued_date": "2022-08-09", "sss": "69-6030514-2", "agency_affiliation": "2022-07-28"}}, {"model": "security.guard", "pk": 21, "fields": {"first_name": "Juan", "last_name": "Dela Cruz", "birth_date": "1991-04-01", "sex": "M", "residence_address": "114 Everlasting  Paranaque City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09560416921", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "43-0659314-7", "agency_affiliation": "2022-07-31"}}, {"model": "security.guard", "pk": 22, "fields": {"first_name": "Corbin", "last_name": "Isidro", "birth_date": "1972-09-02", "sex": "M", "residence_address": "Congbalay Building 520 N. Lopez Avenue Sucat 1700  Paranaque City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09262852546", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "45-3216321-7", "agency_affiliation": "2021-10-19"}}, {"model": "security.guard", "pk": 23, "fields": {"first_name": "Isko", "last_name": "Smith", "birth_date": "1998-11-17", "sex": "M", "residence_address": "673 BMI Avenue, Mandaluyong City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09476602389", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "41-3018522-3", "agency_affiliation": "2021-03-18"}}, {"model": "security.guard", "pk": 24, "fields": {"first_name": "Fermin", "last_name": "Rosario", "birth_date": "1992-11-13", "sex": "M", "residence_address": "Suite 3903-3905 Discovery Center, 25 ADB Avenue, Ortigas Center  Pasig City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09120768877", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "37-7564323-7", "agency_affiliation": "2021-02-19"}}, {"model": "security.guard", "pk": 25, "fields": {"first_name": "Homobono", "last_name": "Pereira", "birth_date": "1973-03-19", "sex": "M", "residence_address": "88 Luzon Avenue  Quezon City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09323038685", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "49-2808331-5", "agency_affiliation": "2021-07-29"}}, {"model": "security.guard", "pk": 26, "fields": {"first_name": "Bagwis", "last_name": "Enriquez", "birth_date": "1996-09-25", "sex": "M", "residence_address": "Vernida Cond Alfaro Street Salcedo Village 1200  Makati City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09905021617", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "36-8457334-9", "agency_affiliation": "2021-06-21"}}, {"model": "security.guard", "pk": 27, "fields": {"first_name": "Gener", "last_name": "Baker", "birth_date": "2000-07-07", "sex": "M", "residence_address": "Aguirre Building, 2211 Commonwealth Avenue, Capitol District  Quezon City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09434384509", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "86-1650996-6", "agency_affiliation": "2021-01-14"}}, {"model": "security.guard", "pk": 28, "fields": {"first_name": "Honesto", "last_name": "Delos Reyes", "birth_date": "1985-12-25", "sex": "M", "residence_address": "Sales And Marketing Office 960 Aurora Boulevard  Quezon City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09604453823", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "46-1054457-8", "agency_affiliation": "2021-02-01"}}, {"model": "security.guard", "pk": 29, "fields": {"first_name": "Huwan", "last_name": "Enriquez", "birth_date": "1999-08-25", "sex": "M", "residence_address": "Aguirre Avenue Corner F. Ortigas Street, BF Homes  Paranaque City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09533023490", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "62-1535830-6", "agency_affiliation": "2021-09-28"}}, {"model": "security.guard", "pk": 30, "fields": {"first_name": "Honesto", "last_name": "Guzman", "birth_date": "1994-05-15", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "66-2837531-9", "agency_affiliation": "2021-07-24"}}, {"model": "security.guard", "pk": 31, "fields": {"first_name": "Benjie", "last_name": "Rodriguez", "birth_date": "1993-09-05", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "32-4732293-4", "agency_affiliation": "2021-09-19"}}, {"model": "security.guard", "pk": 32, "fields": {"first_name": "Renz", "last_name": "Borja", "birth_date": "1975-05-22", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "46-8609942-5", "agency_affiliation": "2021-12-26"}}, {"model": "security.guard", "pk": 33, "fields": {"first_name": "Igme", "last_name": "Velasco", "birth_date": "1999-06-08", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "24-3069652-7", "agency_affiliation": "2021-11-14"}}, {"model": "security.guard", "pk": 34, "fields": {"first_name": "Fermin", "last_name": "Agustin", "birth_date": "1999-09-02", "sex": "M", "residence_address": "1 Ligaya Street Corner A Bonifacio, Balintawak  Quezon City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09905095991", "highest_education": 2, "lesp_issued_date": "2022-08-09", "sss": "95-1179769-5", "agency_affiliation": "2021-06-07"}}, {"model": "security.guard", "pk": 35, "fields": {"first_name": "Rosito", "last_name": "Alvarez", "birth_date": "1992-03-15", "sex": "M", "residence_address": "22 Sct Tuazon 1100  Quezon City, Quezon City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09139434613", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "97-1757594-6", "agency_affiliation": "2021-04-16"}}, {"model": "security.guard", "pk": 36, "fields": {"first_name": "Crisanto", "last_name": "Fernando", "birth_date": "1982-05-04", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "59-1639806-7", "agency_affiliation": "2021-01-23"}}, {"model": "security.guard", "pk": 37, "fields": {"first_name": "Igme", "last_name": "Ruan", "birth_date": "2000-09-16", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "13-2053048-8", "agency_affiliation": "2021-07-30"}}, {"model": "security.guard", "pk": 38, "fields": {"first_name": "Marcus", "last_name": "Morgan", "birth_date": "1977-07-08", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "80-2904904-5", "agency_affiliation": "2021-02-07"}}, {"model": "security.guard", "pk": 39, "fields": {"first_name": "Rizal", "last_name": "Soriano", "birth_date": "1973-11-27", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "42-9749924-9", "agency_affiliation": "2021-09-16"}}, {"model": "security.guard", "pk": 40, "fields": {"first_name": "Rommel", "last_name": "Manuel", "birth_date": "1981-02-07", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "51-5470947-2", "agency_affiliation": "2021-03-27"}}, {"model": "security.guard", "pk": 41, "fields": {"first_name": "Liberato", "last_name": "Pasion", "birth_date": "1997-12-25", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "67-1835046-4", "agency_affiliation": "2021-01-08"}}, {"model": "security.guard", "pk": 42, "fields": {"first_name": "Sherwin", "last_name": "Zamora", "birth_date": "1983-03-19", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "70-5706640-7", "agency_affiliation": "2021-10-08"}}, {"model": "security.guard", "pk": 43, "fields": {"first_name": "Christian", "last_name": "Miller", "birth_date": "1995-12-04", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "84-3605984-6", "agency_affiliation": "2021-10-18"}}, {"model": "security.guard", "pk": 44, "fields": {"first_name": "Melchor", "last_name": "Ramos", "birth_date": "1990-03-24", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "27-1151617-1", "agency_affiliation": "2021-12-02"}}, {"model": "security.guard", "pk": 45, "fields": {"first_name": "Edcel", "last_name": "Aguilar", "birth_date": "1977-06-27", "sex": "M", "residence_address": "22a Grace Avenue, Grace Village, 1115  Quezon City, Metro Manila", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09736108612", "highest_education": 2, "lesp_issued_date": "2022-08-09", "sss": "13-8871357-5", "agency_affiliation": "2021-01-25"}}, {"model": "security.guard", "pk": 46, "fields": {"first_name": "Erick", "last_name": "Ligaya", "birth_date": "1981-11-11", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "49-8276720-4", "agency_affiliation": "2021-04-26"}}, {"model": "security.guard", "pk": 47, "fields": {"first_name": "Larry", "last_name": "Meija", "birth_date": "1974-03-08", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "70-7040053-5", "agency_affiliation": "2021-10-01"}}, {"model": "security.guard", "pk": 48, "fields": {"first_name": "Romel", "last_name": "Reyes", "birth_date": "1973-10-03", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "23-9749385-5", "agency_affiliation": "2021-12-23"}}, {"model": "security.guard", "pk": 49, "fields": {"first_name": "Ramil", "last_name": "Manalo", "birth_date": "1994-06-30", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "31-6232801-4", "agency_affiliation": "2021-06-15"}}, {"model": "security.guard", "pk": 50, "fields": {"first_name": "Mark", "last_name": "De Leon", "birth_date": "1982-08-27", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "82-4495878-2", "agency_affiliation": "2021-04-11"}}, {"model": "security.guard", "pk": 51, "fields": {"first_name": "Pacifico", "last_name": "Cunanan", "birth_date": "1999-04-17", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "72-1282997-5", "agency_affiliation": "2021-09-10"}}, {"model": "security.guard", "pk": 52, "fields": {"first_name": "Joselito", "last_name": "Trinidad", "birth_date": "1979-02-24", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "89-0396643-7", "agency_affiliation": "2021-03-28"}}, {"model": "security.guard", "pk": 53, "fields": {"first_name": "Rextopher", "last_name": "Hill", "birth_date": "1991-08-23", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "71-2636482-6", "agency_affiliation": "2021-04-06"}}, {"model": "security.guard", "pk": 54, "fields": {"first_name": "Mario", "last_name": "Gutierrez", "birth_date": "1999-11-19", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "59-5678391-3", "agency_affiliation": "2021-05-23"}}, {"model": "security.guard", "pk": 55, "fields": {"first_name": "Heherson", "last_name": "Manzano", "birth_date": "1981-04-15", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "48-2351403-8", "agency_affiliation": "2021-07-11"}}, {"model": "security.guard", "pk": 56, "fields": {"first_name": "Capitan", "last_name": "Torres", "birth_date": "1990-08-18", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "66-4052604-9", "agency_affiliation": "2021-07-31"}}, {"model": "security.guard", "pk": 57, "fields": {"first_name": "Rodel", "last_name": "Flores", "birth_date": "1991-03-09", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "59-2824403-8", "agency_affiliation": "2021-09-21"}}, {"model": "security.guard", "pk": 58, "fields": {"first_name": "Rizaldo", "last_name": "Scott", "birth_date": "1991-05-22", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "75-3090379-2", "agency_affiliation": "2021-02-28"}}, {"model": "security.guard", "pk": 59, "fields": {"first_name": "Fermin", "last_name": "Dsouza", "birth_date": "1990-04-09", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "25-3724861-1", "agency_affiliation": "2021-12-16"}}, {"model": "security.guard", "pk": 60, "fields": {"first_name": "Jaydee", "last_name": "Mallari", "birth_date": "1982-11-14", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "71-1833599-5", "agency_affiliation": "2021-09-21"}}, {"model": "security.guard", "pk": 61, "fields": {"first_name": "Melchor", "last_name": "Gabriel", "birth_date": "1997-03-11", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "48-2921780-1", "agency_affiliation": "2021-03-06"}}, {"model": "security.guard", "pk": 62, "fields": {"first_name": "Rodel", "last_name": "Ocampo", "birth_date": "1977-12-14", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "41-3864810-3", "agency_affiliation": "2021-08-04"}}, {"model": "security.guard", "pk": 63, "fields": {"first_name": "Jason", "last_name": "Miranda", "birth_date": "1988-12-07", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "85-2691407-2", "agency_affiliation": "2021-07-21"}}, {"model": "security.guard", "pk": 64, "fields": {"first_name": "Rizalino", "last_name": "Simon", "birth_date": "1997-04-01", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "98-8950449-8", "agency_affiliation": "2021-11-20"}}, {"model": "security.guard", "pk": 65, "fields": {"first_name": "Isagani", "last_name": "Reyes", "birth_date": "2000-03-26", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "95-8430953-6", "agency_affiliation": "2021-09-08"}}, {"model": "security.guard", "pk": 66, "fields": {"first_name": "Andrew", "last_name": "Villanueva", "birth_date": "1997-12-13", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "02-0131002-8", "agency_affiliation": "2021-11-28"}}, {"model": "security.guard", "pk": 67, "fields": {"first_name": "Blue", "last_name": "Magno", "birth_date": "1972-10-21", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "27-7308616-7", "agency_affiliation": "2021-07-21"}}, {"model": "security.guard", "pk": 68, "fields": {"first_name": "Resituto", "last_name": "Gray", "birth_date": "1997-05-29", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "48-1705988-5", "agency_affiliation": "2021-05-08"}}, {"model": "security.guard", "pk": 69, "fields": {"first_name": "Crisanto", "last_name": "Murphy", "birth_date": "1988-07-21", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "81-2702905-5", "agency_affiliation": "2021-06-18"}}, {"model": "security.guard", "pk": 70, "fields": {"first_name": "Melchor", "last_name": "Reed", "birth_date": "1975-02-05", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "16-3482240-3", "agency_affiliation": "2021-03-02"}}, {"model": "security.guard", "pk": 71, "fields": {"first_name": "Jay", "last_name": "Clark", "birth_date": "1998-12-20", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "29-0057785-5", "agency_affiliation": "2021-04-05"}}, {"model": "security.guard", "pk": 72, "fields": {"first_name": "Arnel", "last_name": "Scott", "birth_date": "1998-06-15", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "18-0997703-1", "agency_affiliation": "2021-04-08"}}, {"model": "security.guard", "pk": 73, "fields": {"first_name": "Ernesto", "last_name": "Navarro", "birth_date": "1998-09-12", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "09-5271335-5", "agency_affiliation": "2021-11-23"}}, {"model": "security.guard", "pk": 74, "fields": {"first_name": "Joselito", "last_name": "Bartolome", "birth_date": "1985-08-18", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09191297922", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "46-3615890-5", "agency_affiliation": "2021-04-30"}}, {"model": "security.guard", "pk": 75, "fields": {"first_name": "Luzvimindo", "last_name": "Ruan", "birth_date": "1980-07-14", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "96-7170118-1", "agency_affiliation": "2021-04-20"}}, {"model": "security.guard", "pk": 76, "fields": {"first_name": "Ignacio", "last_name": "Robredo", "birth_date": "1978-07-27", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "60-2654035-7", "agency_affiliation": "2021-12-09"}}, {"model": "security.guard", "pk": 77, "fields": {"first_name": "Biktor", "last_name": "Magtanggol", "birth_date": "1972-02-28", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "77-4665523-8", "agency_affiliation": "2021-12-28"}}, {"model": "security.guard", "pk": 78, "fields": {"first_name": "Cardo", "last_name": "Dalisay", "birth_date": "1985-09-20", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "95-8673259-7", "agency_affiliation": "2021-03-13"}}, {"model": "security.guard", "pk": 79, "fields": {"first_name": "Rommel", "last_name": "Padua", "birth_date": "1989-11-07", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "93-8613743-4", "agency_affiliation": "2021-12-05"}}, {"model": "security.guard", "pk": 80, "fields": {"first_name": "Brother", "last_name": "Martinez", "birth_date": "1974-07-20", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "40-0266276-1", "agency_affiliation": "2021-05-07"}}, {"model": "security.guard", "pk": 81, "fields": {"first_name": "Benji", "last_name": "Cordero", "birth_date": "1984-11-30", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "39-5183277-5", "agency_affiliation": "2021-05-20"}}, {"model": "security.guard", "pk": 82, "fields": {"first_name": "Ramil", "last_name": "Velasco", "birth_date": "1979-07-28", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "66-8426554-6", "agency_affiliation": "2021-09-14"}}, {"model": "security.guard", "pk": 83, "fields": {"first_name": "Naruto", "last_name": "Uzumaki", "birth_date": "1990-07-02", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "36-7052044-8", "agency_affiliation": "2021-10-17"}}, {"model": "security.guard", "pk": 84, "fields": {"first_name": "Rizalina", "last_name": "Fernandez", "birth_date": "1997-05-30", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "49-6580775-6", "agency_affiliation": "2021-03-08"}}, {"model": "security.guard", "pk": 85, "fields": {"first_name": "Marilag", "last_name": "Ruan", "birth_date": "1978-12-17", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "16-7050328-9", "agency_affiliation": "2021-05-25"}}, {"model": "security.guard", "pk": 86, "fields": {"first_name": "Flordeliza", "last_name": "Santiago", "birth_date": "1976-07-25", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "74-4125056-9", "agency_affiliation": "2021-03-12"}}, {"model": "security.guard", "pk": 87, "fields": {"first_name": "Dalisaya", "last_name": "White", "birth_date": "1995-07-04", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "14-4468442-3", "agency_affiliation": "2021-05-06"}}, {"model": "security.guard", "pk": 88, "fields": {"first_name": "Liwayway", "last_name": "Espiritu", "birth_date": "1996-05-02", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "73-5261662-4", "agency_affiliation": "2021-05-24"}}, {"model": "security.guard", "pk": 89, "fields": {"first_name": "Charlita", "last_name": "Robinson", "birth_date": "1992-12-11", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "53-2339986-3", "agency_affiliation": "2021-02-04"}}, {"model": "security.guard", "pk": 90, "fields": {"first_name": "Diwa", "last_name": "Stewart", "birth_date": "1981-02-21", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "84-1742464-1", "agency_affiliation": "2021-02-10"}}, {"model": "security.guard", "pk": 91, "fields": {"first_name": "Irish", "last_name": "Sanchez", "birth_date": "1986-09-10", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "03-7398000-7", "agency_affiliation": "2022-01-26"}}, {"model": "security.guard", "pk": 92, "fields": {"first_name": "Luntian", "last_name": "Harris", "birth_date": "1972-11-27", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "88-8400089-2", "agency_affiliation": "2021-10-26"}}, {"model": "security.guard", "pk": 93, "fields": {"first_name": "Iska", "last_name": "Collins", "birth_date": "1998-07-29", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "42-7977728-5", "agency_affiliation": "2021-01-20"}}, {"model": "security.guard", "pk": 94, "fields": {"first_name": "Sakura", "last_name": "Haruno", "birth_date": "1993-02-08", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "93-3168047-6", "agency_affiliation": "2021-09-17"}}, {"model": "security.guard", "pk": 95, "fields": {"first_name": "Sasha", "last_name": "Blouse", "birth_date": "1972-09-23", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "60-7643323-8", "agency_affiliation": "2021-08-26"}}, {"model": "security.guard", "pk": 96, "fields": {"first_name": "Cassie", "last_name": "Chio", "birth_date": "1985-03-05", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "53-2300718-8", "agency_affiliation": "2021-10-26"}}, {"model": "security.guard", "pk": 97, "fields": {"first_name": "Matia", "last_name": "Sembrano", "birth_date": "1986-11-28", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "78-1408341-2", "agency_affiliation": "2021-05-18"}}, {"model": "security.guard", "pk": 98, "fields": {"first_name": "Estefani", "last_name": "Ignacio", "birth_date": "1984-06-04", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "81-4379815-7", "agency_affiliation": "2021-12-27"}}, {"model": "security.guard", "pk": 99, "fields": {"first_name": "Mirari", "last_name": "Dimayuga", "birth_date": "1983-01-14", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "76-7625239-1", "agency_affiliation": "2021-08-14"}}, {"model": "security.guard", "pk": 100, "fields": {"first_name": "Luveina", "last_name": "Hontiveros", "birth_date": "1993-05-09", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "05-0964746-4", "agency_affiliation": "2021-03-27"}}, {"model": "security.guard", "pk": 101, "fields": {"first_name": "Julina", "last_name": "Jimenez", "birth_date": "1975-05-11", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "01-4048851-9", "agency_affiliation": "2021-07-30"}}, {"model": "security.guard", "pk": 102, "fields": {"first_name": "Gia", "last_name": "Despujol", "birth_date": "1997-04-27", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "94-1699567-6", "agency_affiliation": "2021-04-09"}}, {"model": "security.guard", "pk": 103, "fields": {"first_name": "Marlina", "last_name": "Malapitan", "birth_date": "1979-08-08", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "34-1866112-3", "agency_affiliation": "2021-12-24"}}, {"model": "security.guard", "pk": 104, "fields": {"first_name": "Brenda", "last_name": "Marcelo", "birth_date": "1998-11-20", "sex": "F", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "65-3649020-9", "agency_affiliation": "2021-09-30"}}, {"model": "security.guard", "pk": 105, "fields": {"first_name": "Shaniya", "last_name": "Asuncion", "birth_date": "1986-09-24", "sex": "F", "residence_address": "38 Chicago Street Cubao 1100  Quezon City", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09844266746", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "33-9195919-2", "agency_affiliation": "2021-11-12"}}, {"model": "security.guard", "pk": 106, "fields": {"first_name": "Jeff", "last_name": "Mangahas", "birth_date": "1985-10-07", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "56-8511891-1", "agency_affiliation": "2021-01-26"}}, {"model": "security.guard", "pk": 107, "fields": {"first_name": "Elian", "last_name": "Iriberri", "birth_date": "1982-06-22", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "97-8436985-7", "agency_affiliation": "2021-10-31"}}, {"model": "security.guard", "pk": 108, "fields": {"first_name": "Angelino", "last_name": "Banaga", "birth_date": "1998-03-06", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09535577613", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "65-5061209-4", "agency_affiliation": "2021-01-07"}}, {"model": "security.guard", "pk": 109, "fields": {"first_name": "Enrique", "last_name": "Macalipay", "birth_date": "1995-07-29", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "79-6154551-7", "agency_affiliation": "2021-10-04"}}, {"model": "security.guard", "pk": 110, "fields": {"first_name": "Adam", "last_name": "Gatchalian", "birth_date": "1987-01-29", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "27-8216516-8", "agency_affiliation": "2021-12-08"}}, {"model": "security.guard", "pk": 111, "fields": {"first_name": "Bryan", "last_name": "Cordova", "birth_date": "1972-07-13", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "80-2943065-1", "agency_affiliation": "2021-07-04"}}, {"model": "security.guard", "pk": 112, "fields": {"first_name": "Cesario", "last_name": "Pangan", "birth_date": "1981-10-23", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "98-0455989-2", "agency_affiliation": "2021-02-08"}}, {"model": "security.guard", "pk": 113, "fields": {"first_name": "Gabino", "last_name": "Bataller", "birth_date": "1976-11-24", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "94-7016803-2", "agency_affiliation": "2021-02-14"}}, {"model": "security.guard", "pk": 114, "fields": {"first_name": "Derrick", "last_name": "Baylosis", "birth_date": "1972-04-30", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "11-5127122-6", "agency_affiliation": "2021-06-22"}}, {"model": "security.guard", "pk": 115, "fields": {"first_name": "Malik", "last_name": "Estillore", "birth_date": "1991-04-02", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "79-1085368-5", "agency_affiliation": "2021-03-21"}}, {"model": "security.guard", "pk": 116, "fields": {"first_name": "Dorian", "last_name": "Villaruz", "birth_date": "1991-10-13", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "73-8114597-4", "agency_affiliation": "2021-07-23"}}, {"model": "security.guard", "pk": 117, "fields": {"first_name": "Alijah", "last_name": "Fernando", "birth_date": "1972-03-06", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "99-0445149-3", "agency_affiliation": "2021-03-05"}}, {"model": "security.guard", "pk": 118, "fields": {"first_name": "Mano", "last_name": "Monteverde", "birth_date": "1992-06-30", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "83-3210066-1", "agency_affiliation": "2021-06-24"}}, {"model": "security.guard", "pk": 119, "fields": {"first_name": "Sidney", "last_name": "Centino", "birth_date": "1973-07-10", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "76-4878135-3", "agency_affiliation": "2021-08-18"}}, {"model": "security.guard", "pk": 120, "fields": {"first_name": "Sterling", "last_name": "Deseo", "birth_date": "1977-04-15", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "14-4111777-6", "agency_affiliation": "2021-07-21"}}, {"model": "security.guard", "pk": 121, "fields": {"first_name": "Alexander", "last_name": "Montenegro", "birth_date": "1981-09-19", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "63-2212513-2", "agency_affiliation": "2021-03-28"}}, {"model": "security.guard", "pk": 122, "fields": {"first_name": "Gerald", "last_name": "Yamada", "birth_date": "1972-04-12", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "40-1631034-3", "agency_affiliation": "2021-09-26"}}, {"model": "security.guard", "pk": 123, "fields": {"first_name": "Fernando", "last_name": "Torrealba", "birth_date": "1987-10-13", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "99-5727045-1", "agency_affiliation": "2021-07-27"}}, {"model": "security.guard", "pk": 124, "fields": {"first_name": "Colton", "last_name": "Salinas", "birth_date": "1994-04-14", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "82-1442973-1", "agency_affiliation": "2021-08-11"}}, {"model": "security.guard", "pk": 125, "fields": {"first_name": "Montel", "last_name": "Payumo", "birth_date": "1979-09-15", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "10-5366952-9", "agency_affiliation": "2021-04-01"}}, {"model": "security.guard", "pk": 126, "fields": {"first_name": "Scott", "last_name": "Villamar", "birth_date": "1973-04-29", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "71-5399636-3", "agency_affiliation": "2021-10-08"}}, {"model": "security.guard", "pk": 127, "fields": {"first_name": "Gaspard", "last_name": "Mindoro", "birth_date": "1976-03-13", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09202341123", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "56-1157527-7", "agency_affiliation": "2021-05-29"}}, {"model": "security.guard", "pk": 128, "fields": {"first_name": "Ian", "last_name": "Bana", "birth_date": "1983-05-04", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09472800187", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "94-7774538-3", "agency_affiliation": "2021-02-13"}}, {"model": "security.guard", "pk": 129, "fields": {"first_name": "Marcus", "last_name": "Padilla", "birth_date": "2001-08-02", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "12345678901", "nbi_issued_date": null, "phone_number": "09139686566", "highest_education": 2, "lesp_issued_date": "2022-08-09", "sss": "12-3456789-0", "agency_affiliation": "2001-01-01"}}, {"model": "security.guard", "pk": 130, "fields": {"first_name": "Alex", "last_name": "Suaco", "birth_date": "2001-07-08", "sex": "M", "residence_address": "02 Javier St., Poblacion, San Juan, Batangas", "nbi_clearance_id": "a9b9a0d9gd-a9g9ac9hdf", "nbi_issued_date": null, "phone_number": "09274937506", "highest_education": 1, "lesp_issued_date": "2022-08-09", "sss": "13-4395945-2", "agency_affiliation": "2022-08-05"}}, {"model": "security.post", "pk": 2, "fields": {"location": 3, "place": "Main Entrance", "remarks": null, "is_armed": false}}, {"model": "security.instruction", "pk": 15, "fields": {"shift": 15, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 16, "fields": {"shift": 16, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 17, "fields": {"shift": 17, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 18, "fields": {"shift": 18, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 19, "fields": {"shift": 19, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 20, "fields": {"shift": 20, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 21, "fields": {"shift": 21, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 22, "fields": {"shift": 22, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 23, "fields": {"shift": 23, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 24, "fields": {"shift": 24, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 25, "fields": {"shift": 25, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 26, "fields": {"shift": 26, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 27, "fields": {"shift": 27, "post": 2, "number_of_guards": 2, "designations": []}}, {"model": "security.instruction", "pk": 28, "fields": {"shift": 28, "post": 2, "number_of_guards": 2, "designations": []}}]
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2022-08-09T08:55:29.217Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "1",
+            "object_repr": "Polytechnic University of the Philippines",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2022-08-09T09:00:23.592Z",
+            "user": 1,
+            "content_type": 6,
+            "object_id": "2",
+            "object_repr": "Marc Stephen Gabres",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.228Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "2",
+            "object_repr": "Monday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.230Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "1",
+            "object_repr": "Monday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.231Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "4",
+            "object_repr": "Tuesday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.232Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "3",
+            "object_repr": "Tuesday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.233Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "6",
+            "object_repr": "Wednesday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.235Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "5",
+            "object_repr": "Wednesday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.237Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "8",
+            "object_repr": "Thursday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.238Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "7",
+            "object_repr": "Thursday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.239Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "10",
+            "object_repr": "Friday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.240Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "9",
+            "object_repr": "Friday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.241Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "12",
+            "object_repr": "Saturday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.242Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "11",
+            "object_repr": "Saturday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.244Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "14",
+            "object_repr": "Sunday - 20:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2022-08-09T09:00:31.246Z",
+            "user": 1,
+            "content_type": 15,
+            "object_id": "13",
+            "object_repr": "Sunday - 08:00:00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 6,
+            "codename": "add_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 6,
+            "codename": "change_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 6,
+            "codename": "delete_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 6,
+            "codename": "view_customuser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add agency information",
+            "content_type": 7,
+            "codename": "add_agencyinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change agency information",
+            "content_type": 7,
+            "codename": "change_agencyinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete agency information",
+            "content_type": 7,
+            "codename": "delete_agencyinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view agency information",
+            "content_type": 7,
+            "codename": "view_agencyinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add contract",
+            "content_type": 8,
+            "codename": "add_contract"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change contract",
+            "content_type": 8,
+            "codename": "change_contract"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete contract",
+            "content_type": 8,
+            "codename": "delete_contract"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view contract",
+            "content_type": 8,
+            "codename": "view_contract"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add ddo",
+            "content_type": 9,
+            "codename": "add_ddo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change ddo",
+            "content_type": 9,
+            "codename": "change_ddo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete ddo",
+            "content_type": 9,
+            "codename": "delete_ddo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view ddo",
+            "content_type": 9,
+            "codename": "view_ddo"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add designation",
+            "content_type": 10,
+            "codename": "add_designation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change designation",
+            "content_type": 10,
+            "codename": "change_designation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete designation",
+            "content_type": 10,
+            "codename": "delete_designation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view designation",
+            "content_type": 10,
+            "codename": "view_designation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add firearm",
+            "content_type": 11,
+            "codename": "add_firearm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change firearm",
+            "content_type": 11,
+            "codename": "change_firearm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete firearm",
+            "content_type": 11,
+            "codename": "delete_firearm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view firearm",
+            "content_type": 11,
+            "codename": "view_firearm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add guard",
+            "content_type": 12,
+            "codename": "add_guard"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change guard",
+            "content_type": 12,
+            "codename": "change_guard"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete guard",
+            "content_type": 12,
+            "codename": "delete_guard"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view guard",
+            "content_type": 12,
+            "codename": "view_guard"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add instruction",
+            "content_type": 13,
+            "codename": "add_instruction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change instruction",
+            "content_type": 13,
+            "codename": "change_instruction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete instruction",
+            "content_type": 13,
+            "codename": "delete_instruction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view instruction",
+            "content_type": 13,
+            "codename": "view_instruction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add location",
+            "content_type": 14,
+            "codename": "add_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change location",
+            "content_type": 14,
+            "codename": "change_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete location",
+            "content_type": 14,
+            "codename": "delete_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view location",
+            "content_type": 14,
+            "codename": "view_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add shift",
+            "content_type": 15,
+            "codename": "add_shift"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change shift",
+            "content_type": 15,
+            "codename": "change_shift"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete shift",
+            "content_type": 15,
+            "codename": "delete_shift"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view shift",
+            "content_type": 15,
+            "codename": "view_shift"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add post",
+            "content_type": 16,
+            "codename": "add_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change post",
+            "content_type": 16,
+            "codename": "change_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete post",
+            "content_type": 16,
+            "codename": "delete_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view post",
+            "content_type": 16,
+            "codename": "view_post"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 65,
+        "fields": {
+            "name": "Can add firearm assignment",
+            "content_type": 17,
+            "codename": "add_firearmassignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 66,
+        "fields": {
+            "name": "Can change firearm assignment",
+            "content_type": 17,
+            "codename": "change_firearmassignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 67,
+        "fields": {
+            "name": "Can delete firearm assignment",
+            "content_type": 17,
+            "codename": "delete_firearmassignment"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 68,
+        "fields": {
+            "name": "Can view firearm assignment",
+            "content_type": 17,
+            "codename": "view_firearmassignment"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "security",
+            "model": "customuser"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "security",
+            "model": "agencyinformation"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "security",
+            "model": "contract"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "security",
+            "model": "ddo"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "security",
+            "model": "designation"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "security",
+            "model": "firearm"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "security",
+            "model": "guard"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "security",
+            "model": "instruction"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "security",
+            "model": "location"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "security",
+            "model": "shift"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "security",
+            "model": "post"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 17,
+        "fields": {
+            "app_label": "security",
+            "model": "firearmassignment"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "7bl0zp2ew3m7u4r3yt56p36ub3esddk5",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGln-rINDSZ8zRLveBQeQLcVJhbg7iZQC2jcz761GXJc8rk3mcWJ1UV6dfjfC9JSyA35guVedalnmifSu6IM2PVSW1_Vw_w4ytrzV0Ti4AXDvBG3qyQozBqZg2EG3oZDOVjoXrItgQvQ2MXn2hIDiGdXnC-MnOBY:1oLL7o:tBvJ5Ngf6xZsrDZqlDoQYysZ0vO_vCrC8k59mSxfvjs",
+            "expire_date": "2022-08-23T09:02:08.458Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "tbrjz3dh5hwhubxfejsy9v0a5ztdlnmt",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pB2ShnGpXvPQIYBpGpoUtqV8e7apAvd_vfefynP21r81tLip6jOqlen3y2wPFLdQbxzvc1a5rouU9C7og_a9HWO6Xk53L-Dwq186xAZOwCCESUzB3GcOUNnRrJIKCguIfQAKHYw1nFgKySSsqFMYVDvD_WcOHI:1oLKsl:sCrIwqZhqp-5AisW-3YyFWY_N5z-M4CVlyq_Vqd0DKw",
+            "expire_date": "2022-08-23T08:46:35.023Z"
+        }
+    },
+    {
+        "model": "security.customuser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$jNkYTCAtUhskZlUgD11Wlm$fbdasqXYUfvxPn3feEzb+RyLraiSH0+kuN809vVRnYc=",
+            "last_login": "2022-08-09T08:47:59.929Z",
+            "is_superuser": true,
+            "username": "VincentVollachia",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-08-09T08:46:30.524Z",
+            "phone_number": null,
+            "birth_date": null,
+            "sex": "M",
+            "organization_name": null,
+            "organization_address": null,
+            "position": null,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "security.customuser",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$IrEib9gTQ4npRS7LOdMPiw$EZahZUrHsdgP3M7tH6kzAnqqXMtXVHgZ+XhhRmXcPGE=",
+            "last_login": "2022-08-09T09:02:08.455Z",
+            "is_superuser": false,
+            "username": "RikuDola",
+            "first_name": "Marc Stephen",
+            "last_name": "Gabres",
+            "email": "arclight04@gmail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-09T09:01:58.848Z",
+            "phone_number": "09202750407",
+            "birth_date": "2001-08-01",
+            "sex": "M",
+            "organization_name": "Polytechnic University of the Philippines",
+            "organization_address": "1016 Anonas, Sta. Mesa, Maynila, Kalakhang Maynila",
+            "position": "President",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "security.contract",
+        "pk": 2,
+        "fields": {
+            "client": 3,
+            "issued_date": "2022-08-09",
+            "start_date": "2022-08-01",
+            "years": 1,
+            "months": null,
+            "daily_wage": 450.0,
+            "is_finished": true,
+            "status": 3,
+            "link": "/contract/2/full"
+        }
+    },
+    {
+        "model": "security.location",
+        "pk": 3,
+        "fields": {
+            "owner": 3,
+            "name": "Polytechnic University of the Philippines",
+            "address": "1016 Anonas, Sta. Mesa, Maynila, Kalakhang Maynila",
+            "include": false,
+            "contracts": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "security.ddo",
+        "pk": 1,
+        "fields": {
+            "date_issued": "2022-08-09T09:13:57.465Z",
+            "start_date": null,
+            "location": 3,
+            "operations_manager": "Riku Dola",
+            "validity": 0,
+            "link": "/ddo/1/post/2/initial/",
+            "is_finished": false
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 15,
+        "fields": {
+            "day": 1,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 16,
+        "fields": {
+            "day": 1,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 17,
+        "fields": {
+            "day": 2,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 18,
+        "fields": {
+            "day": 2,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 19,
+        "fields": {
+            "day": 3,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 20,
+        "fields": {
+            "day": 3,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 21,
+        "fields": {
+            "day": 4,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 22,
+        "fields": {
+            "day": 4,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 23,
+        "fields": {
+            "day": 5,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 24,
+        "fields": {
+            "day": 5,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 25,
+        "fields": {
+            "day": 6,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 26,
+        "fields": {
+            "day": 6,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 27,
+        "fields": {
+            "day": 7,
+            "start_time": "08:00:00",
+            "end_time": "20:00:00"
+        }
+    },
+    {
+        "model": "security.shift",
+        "pk": 28,
+        "fields": {
+            "day": 7,
+            "start_time": "20:00:00",
+            "end_time": "08:00:00"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 12,
+        "fields": {
+            "first_name": "Theresia",
+            "last_name": "Astrea",
+            "birth_date": "2001-01-01",
+            "sex": "F",
+            "residence_address": "2213-B F Zobel 1200  Makati City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09004357880",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "12-3456789-0",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 13,
+        "fields": {
+            "first_name": "Reinhardt",
+            "last_name": "Astrea",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "62 Old Samson Road  Quezon City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09942379923",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "12-3456789-0",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 14,
+        "fields": {
+            "first_name": "Julius",
+            "last_name": "Euclius",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "154 Shaw Boulevard Corner 29 de Agosto Street  Mandaluyong City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09917163917",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "12-3456789-0",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 15,
+        "fields": {
+            "first_name": "Mamiya",
+            "last_name": "Takuji",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "2921 Taft Avenue 1300  Pasay City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09467593691",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "12-3456789-0",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 16,
+        "fields": {
+            "first_name": "Crusch",
+            "last_name": "Karsten",
+            "birth_date": "2001-01-01",
+            "sex": "F",
+            "residence_address": "2/F Building 12 Ccmc CompoundVeterans Center  Taguig City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09593215700",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "25-5664303-3",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 17,
+        "fields": {
+            "first_name": "Yuuki",
+            "last_name": "Minakami",
+            "birth_date": "2001-01-01",
+            "sex": "F",
+            "residence_address": "Dr A Santos Avenue 1700  Paranaque City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09332193794",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "52-8064963-3",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 18,
+        "fields": {
+            "first_name": "Ash",
+            "last_name": "Ketchum",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "340 A. Amang Rodriguez Ave. Manggahan  Pasig City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09902763875",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "31-5524945-9",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 19,
+        "fields": {
+            "first_name": "Childe",
+            "last_name": "Tartaglia",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "1129 Quirino Highway Kaligayahan Novaliches 1124  Quezon City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09533291703",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "58-1361043-7",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 20,
+        "fields": {
+            "first_name": "Takuru",
+            "last_name": "Miyashiro",
+            "birth_date": "2001-01-01",
+            "sex": "M",
+            "residence_address": "167 Biak-Na-Bato  Quezon City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09791538238",
+            "highest_education": 2,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "69-6030514-2",
+            "agency_affiliation": "2022-07-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 21,
+        "fields": {
+            "first_name": "Juan",
+            "last_name": "Dela Cruz",
+            "birth_date": "1991-04-01",
+            "sex": "M",
+            "residence_address": "114 Everlasting  Paranaque City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09560416921",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "43-0659314-7",
+            "agency_affiliation": "2022-07-31"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 22,
+        "fields": {
+            "first_name": "Corbin",
+            "last_name": "Isidro",
+            "birth_date": "1972-09-02",
+            "sex": "M",
+            "residence_address": "Congbalay Building 520 N. Lopez Avenue Sucat 1700  Paranaque City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09262852546",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "45-3216321-7",
+            "agency_affiliation": "2021-10-19"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 23,
+        "fields": {
+            "first_name": "Isko",
+            "last_name": "Smith",
+            "birth_date": "1998-11-17",
+            "sex": "M",
+            "residence_address": "673 BMI Avenue, Mandaluyong City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09476602389",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "41-3018522-3",
+            "agency_affiliation": "2021-03-18"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 24,
+        "fields": {
+            "first_name": "Fermin",
+            "last_name": "Rosario",
+            "birth_date": "1992-11-13",
+            "sex": "M",
+            "residence_address": "Suite 3903-3905 Discovery Center, 25 ADB Avenue, Ortigas Center  Pasig City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09120768877",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "37-7564323-7",
+            "agency_affiliation": "2021-02-19"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 25,
+        "fields": {
+            "first_name": "Homobono",
+            "last_name": "Pereira",
+            "birth_date": "1973-03-19",
+            "sex": "M",
+            "residence_address": "88 Luzon Avenue  Quezon City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09323038685",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "49-2808331-5",
+            "agency_affiliation": "2021-07-29"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 26,
+        "fields": {
+            "first_name": "Bagwis",
+            "last_name": "Enriquez",
+            "birth_date": "1996-09-25",
+            "sex": "M",
+            "residence_address": "Vernida Cond Alfaro Street Salcedo Village 1200  Makati City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09905021617",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "36-8457334-9",
+            "agency_affiliation": "2021-06-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 27,
+        "fields": {
+            "first_name": "Gener",
+            "last_name": "Baker",
+            "birth_date": "2000-07-07",
+            "sex": "M",
+            "residence_address": "Aguirre Building, 2211 Commonwealth Avenue, Capitol District  Quezon City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09434384509",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "86-1650996-6",
+            "agency_affiliation": "2021-01-14"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 28,
+        "fields": {
+            "first_name": "Honesto",
+            "last_name": "Delos Reyes",
+            "birth_date": "1985-12-25",
+            "sex": "M",
+            "residence_address": "Sales And Marketing Office 960 Aurora Boulevard  Quezon City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09604453823",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "46-1054457-8",
+            "agency_affiliation": "2021-02-01"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 29,
+        "fields": {
+            "first_name": "Huwan",
+            "last_name": "Enriquez",
+            "birth_date": "1999-08-25",
+            "sex": "M",
+            "residence_address": "Aguirre Avenue Corner F. Ortigas Street, BF Homes  Paranaque City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09533023490",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "62-1535830-6",
+            "agency_affiliation": "2021-09-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 30,
+        "fields": {
+            "first_name": "Honesto",
+            "last_name": "Guzman",
+            "birth_date": "1994-05-15",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "66-2837531-9",
+            "agency_affiliation": "2021-07-24"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 31,
+        "fields": {
+            "first_name": "Benjie",
+            "last_name": "Rodriguez",
+            "birth_date": "1993-09-05",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "32-4732293-4",
+            "agency_affiliation": "2021-09-19"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 32,
+        "fields": {
+            "first_name": "Renz",
+            "last_name": "Borja",
+            "birth_date": "1975-05-22",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "46-8609942-5",
+            "agency_affiliation": "2021-12-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 33,
+        "fields": {
+            "first_name": "Igme",
+            "last_name": "Velasco",
+            "birth_date": "1999-06-08",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "24-3069652-7",
+            "agency_affiliation": "2021-11-14"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 34,
+        "fields": {
+            "first_name": "Fermin",
+            "last_name": "Agustin",
+            "birth_date": "1999-09-02",
+            "sex": "M",
+            "residence_address": "1 Ligaya Street Corner A Bonifacio, Balintawak  Quezon City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09905095991",
+            "highest_education": 2,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "95-1179769-5",
+            "agency_affiliation": "2021-06-07"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 35,
+        "fields": {
+            "first_name": "Rosito",
+            "last_name": "Alvarez",
+            "birth_date": "1992-03-15",
+            "sex": "M",
+            "residence_address": "22 Sct Tuazon 1100  Quezon City, Quezon City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09139434613",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "97-1757594-6",
+            "agency_affiliation": "2021-04-16"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 36,
+        "fields": {
+            "first_name": "Crisanto",
+            "last_name": "Fernando",
+            "birth_date": "1982-05-04",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "59-1639806-7",
+            "agency_affiliation": "2021-01-23"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 37,
+        "fields": {
+            "first_name": "Igme",
+            "last_name": "Ruan",
+            "birth_date": "2000-09-16",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "13-2053048-8",
+            "agency_affiliation": "2021-07-30"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 38,
+        "fields": {
+            "first_name": "Marcus",
+            "last_name": "Morgan",
+            "birth_date": "1977-07-08",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "80-2904904-5",
+            "agency_affiliation": "2021-02-07"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 39,
+        "fields": {
+            "first_name": "Rizal",
+            "last_name": "Soriano",
+            "birth_date": "1973-11-27",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "42-9749924-9",
+            "agency_affiliation": "2021-09-16"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 40,
+        "fields": {
+            "first_name": "Rommel",
+            "last_name": "Manuel",
+            "birth_date": "1981-02-07",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "51-5470947-2",
+            "agency_affiliation": "2021-03-27"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 41,
+        "fields": {
+            "first_name": "Liberato",
+            "last_name": "Pasion",
+            "birth_date": "1997-12-25",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "67-1835046-4",
+            "agency_affiliation": "2021-01-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 42,
+        "fields": {
+            "first_name": "Sherwin",
+            "last_name": "Zamora",
+            "birth_date": "1983-03-19",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "70-5706640-7",
+            "agency_affiliation": "2021-10-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 43,
+        "fields": {
+            "first_name": "Christian",
+            "last_name": "Miller",
+            "birth_date": "1995-12-04",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "84-3605984-6",
+            "agency_affiliation": "2021-10-18"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 44,
+        "fields": {
+            "first_name": "Melchor",
+            "last_name": "Ramos",
+            "birth_date": "1990-03-24",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "27-1151617-1",
+            "agency_affiliation": "2021-12-02"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 45,
+        "fields": {
+            "first_name": "Edcel",
+            "last_name": "Aguilar",
+            "birth_date": "1977-06-27",
+            "sex": "M",
+            "residence_address": "22a Grace Avenue, Grace Village, 1115  Quezon City, Metro Manila",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09736108612",
+            "highest_education": 2,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "13-8871357-5",
+            "agency_affiliation": "2021-01-25"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 46,
+        "fields": {
+            "first_name": "Erick",
+            "last_name": "Ligaya",
+            "birth_date": "1981-11-11",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "49-8276720-4",
+            "agency_affiliation": "2021-04-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 47,
+        "fields": {
+            "first_name": "Larry",
+            "last_name": "Meija",
+            "birth_date": "1974-03-08",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "70-7040053-5",
+            "agency_affiliation": "2021-10-01"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 48,
+        "fields": {
+            "first_name": "Romel",
+            "last_name": "Reyes",
+            "birth_date": "1973-10-03",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "23-9749385-5",
+            "agency_affiliation": "2021-12-23"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 49,
+        "fields": {
+            "first_name": "Ramil",
+            "last_name": "Manalo",
+            "birth_date": "1994-06-30",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "31-6232801-4",
+            "agency_affiliation": "2021-06-15"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 50,
+        "fields": {
+            "first_name": "Mark",
+            "last_name": "De Leon",
+            "birth_date": "1982-08-27",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "82-4495878-2",
+            "agency_affiliation": "2021-04-11"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 51,
+        "fields": {
+            "first_name": "Pacifico",
+            "last_name": "Cunanan",
+            "birth_date": "1999-04-17",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "72-1282997-5",
+            "agency_affiliation": "2021-09-10"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 52,
+        "fields": {
+            "first_name": "Joselito",
+            "last_name": "Trinidad",
+            "birth_date": "1979-02-24",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "89-0396643-7",
+            "agency_affiliation": "2021-03-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 53,
+        "fields": {
+            "first_name": "Rextopher",
+            "last_name": "Hill",
+            "birth_date": "1991-08-23",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "71-2636482-6",
+            "agency_affiliation": "2021-04-06"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 54,
+        "fields": {
+            "first_name": "Mario",
+            "last_name": "Gutierrez",
+            "birth_date": "1999-11-19",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "59-5678391-3",
+            "agency_affiliation": "2021-05-23"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 55,
+        "fields": {
+            "first_name": "Heherson",
+            "last_name": "Manzano",
+            "birth_date": "1981-04-15",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "48-2351403-8",
+            "agency_affiliation": "2021-07-11"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 56,
+        "fields": {
+            "first_name": "Capitan",
+            "last_name": "Torres",
+            "birth_date": "1990-08-18",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "66-4052604-9",
+            "agency_affiliation": "2021-07-31"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 57,
+        "fields": {
+            "first_name": "Rodel",
+            "last_name": "Flores",
+            "birth_date": "1991-03-09",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "59-2824403-8",
+            "agency_affiliation": "2021-09-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 58,
+        "fields": {
+            "first_name": "Rizaldo",
+            "last_name": "Scott",
+            "birth_date": "1991-05-22",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "75-3090379-2",
+            "agency_affiliation": "2021-02-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 59,
+        "fields": {
+            "first_name": "Fermin",
+            "last_name": "Dsouza",
+            "birth_date": "1990-04-09",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "25-3724861-1",
+            "agency_affiliation": "2021-12-16"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 60,
+        "fields": {
+            "first_name": "Jaydee",
+            "last_name": "Mallari",
+            "birth_date": "1982-11-14",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "71-1833599-5",
+            "agency_affiliation": "2021-09-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 61,
+        "fields": {
+            "first_name": "Melchor",
+            "last_name": "Gabriel",
+            "birth_date": "1997-03-11",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "48-2921780-1",
+            "agency_affiliation": "2021-03-06"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 62,
+        "fields": {
+            "first_name": "Rodel",
+            "last_name": "Ocampo",
+            "birth_date": "1977-12-14",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "41-3864810-3",
+            "agency_affiliation": "2021-08-04"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 63,
+        "fields": {
+            "first_name": "Jason",
+            "last_name": "Miranda",
+            "birth_date": "1988-12-07",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "85-2691407-2",
+            "agency_affiliation": "2021-07-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 64,
+        "fields": {
+            "first_name": "Rizalino",
+            "last_name": "Simon",
+            "birth_date": "1997-04-01",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "98-8950449-8",
+            "agency_affiliation": "2021-11-20"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 65,
+        "fields": {
+            "first_name": "Isagani",
+            "last_name": "Reyes",
+            "birth_date": "2000-03-26",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "95-8430953-6",
+            "agency_affiliation": "2021-09-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 66,
+        "fields": {
+            "first_name": "Andrew",
+            "last_name": "Villanueva",
+            "birth_date": "1997-12-13",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "02-0131002-8",
+            "agency_affiliation": "2021-11-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 67,
+        "fields": {
+            "first_name": "Blue",
+            "last_name": "Magno",
+            "birth_date": "1972-10-21",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "27-7308616-7",
+            "agency_affiliation": "2021-07-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 68,
+        "fields": {
+            "first_name": "Resituto",
+            "last_name": "Gray",
+            "birth_date": "1997-05-29",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "48-1705988-5",
+            "agency_affiliation": "2021-05-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 69,
+        "fields": {
+            "first_name": "Crisanto",
+            "last_name": "Murphy",
+            "birth_date": "1988-07-21",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "81-2702905-5",
+            "agency_affiliation": "2021-06-18"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 70,
+        "fields": {
+            "first_name": "Melchor",
+            "last_name": "Reed",
+            "birth_date": "1975-02-05",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "16-3482240-3",
+            "agency_affiliation": "2021-03-02"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 71,
+        "fields": {
+            "first_name": "Jay",
+            "last_name": "Clark",
+            "birth_date": "1998-12-20",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "29-0057785-5",
+            "agency_affiliation": "2021-04-05"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 72,
+        "fields": {
+            "first_name": "Arnel",
+            "last_name": "Scott",
+            "birth_date": "1998-06-15",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "18-0997703-1",
+            "agency_affiliation": "2021-04-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 73,
+        "fields": {
+            "first_name": "Ernesto",
+            "last_name": "Navarro",
+            "birth_date": "1998-09-12",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "09-5271335-5",
+            "agency_affiliation": "2021-11-23"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 74,
+        "fields": {
+            "first_name": "Joselito",
+            "last_name": "Bartolome",
+            "birth_date": "1985-08-18",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09191297922",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "46-3615890-5",
+            "agency_affiliation": "2021-04-30"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 75,
+        "fields": {
+            "first_name": "Luzvimindo",
+            "last_name": "Ruan",
+            "birth_date": "1980-07-14",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "96-7170118-1",
+            "agency_affiliation": "2021-04-20"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 76,
+        "fields": {
+            "first_name": "Ignacio",
+            "last_name": "Robredo",
+            "birth_date": "1978-07-27",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "60-2654035-7",
+            "agency_affiliation": "2021-12-09"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 77,
+        "fields": {
+            "first_name": "Biktor",
+            "last_name": "Magtanggol",
+            "birth_date": "1972-02-28",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "77-4665523-8",
+            "agency_affiliation": "2021-12-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 78,
+        "fields": {
+            "first_name": "Cardo",
+            "last_name": "Dalisay",
+            "birth_date": "1985-09-20",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "95-8673259-7",
+            "agency_affiliation": "2021-03-13"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 79,
+        "fields": {
+            "first_name": "Rommel",
+            "last_name": "Padua",
+            "birth_date": "1989-11-07",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "93-8613743-4",
+            "agency_affiliation": "2021-12-05"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 80,
+        "fields": {
+            "first_name": "Brother",
+            "last_name": "Martinez",
+            "birth_date": "1974-07-20",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "40-0266276-1",
+            "agency_affiliation": "2021-05-07"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 81,
+        "fields": {
+            "first_name": "Benji",
+            "last_name": "Cordero",
+            "birth_date": "1984-11-30",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "39-5183277-5",
+            "agency_affiliation": "2021-05-20"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 82,
+        "fields": {
+            "first_name": "Ramil",
+            "last_name": "Velasco",
+            "birth_date": "1979-07-28",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "66-8426554-6",
+            "agency_affiliation": "2021-09-14"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 83,
+        "fields": {
+            "first_name": "Naruto",
+            "last_name": "Uzumaki",
+            "birth_date": "1990-07-02",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "36-7052044-8",
+            "agency_affiliation": "2021-10-17"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 84,
+        "fields": {
+            "first_name": "Rizalina",
+            "last_name": "Fernandez",
+            "birth_date": "1997-05-30",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "49-6580775-6",
+            "agency_affiliation": "2021-03-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 85,
+        "fields": {
+            "first_name": "Marilag",
+            "last_name": "Ruan",
+            "birth_date": "1978-12-17",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "16-7050328-9",
+            "agency_affiliation": "2021-05-25"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 86,
+        "fields": {
+            "first_name": "Flordeliza",
+            "last_name": "Santiago",
+            "birth_date": "1976-07-25",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "74-4125056-9",
+            "agency_affiliation": "2021-03-12"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 87,
+        "fields": {
+            "first_name": "Dalisaya",
+            "last_name": "White",
+            "birth_date": "1995-07-04",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "14-4468442-3",
+            "agency_affiliation": "2021-05-06"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 88,
+        "fields": {
+            "first_name": "Liwayway",
+            "last_name": "Espiritu",
+            "birth_date": "1996-05-02",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "73-5261662-4",
+            "agency_affiliation": "2021-05-24"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 89,
+        "fields": {
+            "first_name": "Charlita",
+            "last_name": "Robinson",
+            "birth_date": "1992-12-11",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "53-2339986-3",
+            "agency_affiliation": "2021-02-04"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 90,
+        "fields": {
+            "first_name": "Diwa",
+            "last_name": "Stewart",
+            "birth_date": "1981-02-21",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "84-1742464-1",
+            "agency_affiliation": "2021-02-10"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 91,
+        "fields": {
+            "first_name": "Irish",
+            "last_name": "Sanchez",
+            "birth_date": "1986-09-10",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "03-7398000-7",
+            "agency_affiliation": "2022-01-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 92,
+        "fields": {
+            "first_name": "Luntian",
+            "last_name": "Harris",
+            "birth_date": "1972-11-27",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "88-8400089-2",
+            "agency_affiliation": "2021-10-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 93,
+        "fields": {
+            "first_name": "Iska",
+            "last_name": "Collins",
+            "birth_date": "1998-07-29",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "42-7977728-5",
+            "agency_affiliation": "2021-01-20"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 94,
+        "fields": {
+            "first_name": "Sakura",
+            "last_name": "Haruno",
+            "birth_date": "1993-02-08",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "93-3168047-6",
+            "agency_affiliation": "2021-09-17"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 95,
+        "fields": {
+            "first_name": "Sasha",
+            "last_name": "Blouse",
+            "birth_date": "1972-09-23",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "60-7643323-8",
+            "agency_affiliation": "2021-08-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 96,
+        "fields": {
+            "first_name": "Cassie",
+            "last_name": "Chio",
+            "birth_date": "1985-03-05",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "53-2300718-8",
+            "agency_affiliation": "2021-10-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 97,
+        "fields": {
+            "first_name": "Matia",
+            "last_name": "Sembrano",
+            "birth_date": "1986-11-28",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "78-1408341-2",
+            "agency_affiliation": "2021-05-18"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 98,
+        "fields": {
+            "first_name": "Estefani",
+            "last_name": "Ignacio",
+            "birth_date": "1984-06-04",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "81-4379815-7",
+            "agency_affiliation": "2021-12-27"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 99,
+        "fields": {
+            "first_name": "Mirari",
+            "last_name": "Dimayuga",
+            "birth_date": "1983-01-14",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "76-7625239-1",
+            "agency_affiliation": "2021-08-14"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 100,
+        "fields": {
+            "first_name": "Luveina",
+            "last_name": "Hontiveros",
+            "birth_date": "1993-05-09",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "05-0964746-4",
+            "agency_affiliation": "2021-03-27"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 101,
+        "fields": {
+            "first_name": "Julina",
+            "last_name": "Jimenez",
+            "birth_date": "1975-05-11",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "01-4048851-9",
+            "agency_affiliation": "2021-07-30"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 102,
+        "fields": {
+            "first_name": "Gia",
+            "last_name": "Despujol",
+            "birth_date": "1997-04-27",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "94-1699567-6",
+            "agency_affiliation": "2021-04-09"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 103,
+        "fields": {
+            "first_name": "Marlina",
+            "last_name": "Malapitan",
+            "birth_date": "1979-08-08",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "34-1866112-3",
+            "agency_affiliation": "2021-12-24"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 104,
+        "fields": {
+            "first_name": "Brenda",
+            "last_name": "Marcelo",
+            "birth_date": "1998-11-20",
+            "sex": "F",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "65-3649020-9",
+            "agency_affiliation": "2021-09-30"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 105,
+        "fields": {
+            "first_name": "Shaniya",
+            "last_name": "Asuncion",
+            "birth_date": "1986-09-24",
+            "sex": "F",
+            "residence_address": "38 Chicago Street Cubao 1100  Quezon City",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09844266746",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "33-9195919-2",
+            "agency_affiliation": "2021-11-12"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 106,
+        "fields": {
+            "first_name": "Jeff",
+            "last_name": "Mangahas",
+            "birth_date": "1985-10-07",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "56-8511891-1",
+            "agency_affiliation": "2021-01-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 107,
+        "fields": {
+            "first_name": "Elian",
+            "last_name": "Iriberri",
+            "birth_date": "1982-06-22",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "97-8436985-7",
+            "agency_affiliation": "2021-10-31"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 108,
+        "fields": {
+            "first_name": "Angelino",
+            "last_name": "Banaga",
+            "birth_date": "1998-03-06",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09535577613",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "65-5061209-4",
+            "agency_affiliation": "2021-01-07"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 109,
+        "fields": {
+            "first_name": "Enrique",
+            "last_name": "Macalipay",
+            "birth_date": "1995-07-29",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "79-6154551-7",
+            "agency_affiliation": "2021-10-04"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 110,
+        "fields": {
+            "first_name": "Adam",
+            "last_name": "Gatchalian",
+            "birth_date": "1987-01-29",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "27-8216516-8",
+            "agency_affiliation": "2021-12-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 111,
+        "fields": {
+            "first_name": "Bryan",
+            "last_name": "Cordova",
+            "birth_date": "1972-07-13",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "80-2943065-1",
+            "agency_affiliation": "2021-07-04"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 112,
+        "fields": {
+            "first_name": "Cesario",
+            "last_name": "Pangan",
+            "birth_date": "1981-10-23",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "98-0455989-2",
+            "agency_affiliation": "2021-02-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 113,
+        "fields": {
+            "first_name": "Gabino",
+            "last_name": "Bataller",
+            "birth_date": "1976-11-24",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "94-7016803-2",
+            "agency_affiliation": "2021-02-14"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 114,
+        "fields": {
+            "first_name": "Derrick",
+            "last_name": "Baylosis",
+            "birth_date": "1972-04-30",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "11-5127122-6",
+            "agency_affiliation": "2021-06-22"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 115,
+        "fields": {
+            "first_name": "Malik",
+            "last_name": "Estillore",
+            "birth_date": "1991-04-02",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "79-1085368-5",
+            "agency_affiliation": "2021-03-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 116,
+        "fields": {
+            "first_name": "Dorian",
+            "last_name": "Villaruz",
+            "birth_date": "1991-10-13",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "73-8114597-4",
+            "agency_affiliation": "2021-07-23"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 117,
+        "fields": {
+            "first_name": "Alijah",
+            "last_name": "Fernando",
+            "birth_date": "1972-03-06",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "99-0445149-3",
+            "agency_affiliation": "2021-03-05"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 118,
+        "fields": {
+            "first_name": "Mano",
+            "last_name": "Monteverde",
+            "birth_date": "1992-06-30",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "83-3210066-1",
+            "agency_affiliation": "2021-06-24"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 119,
+        "fields": {
+            "first_name": "Sidney",
+            "last_name": "Centino",
+            "birth_date": "1973-07-10",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "76-4878135-3",
+            "agency_affiliation": "2021-08-18"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 120,
+        "fields": {
+            "first_name": "Sterling",
+            "last_name": "Deseo",
+            "birth_date": "1977-04-15",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "14-4111777-6",
+            "agency_affiliation": "2021-07-21"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 121,
+        "fields": {
+            "first_name": "Alexander",
+            "last_name": "Montenegro",
+            "birth_date": "1981-09-19",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "63-2212513-2",
+            "agency_affiliation": "2021-03-28"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 122,
+        "fields": {
+            "first_name": "Gerald",
+            "last_name": "Yamada",
+            "birth_date": "1972-04-12",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "40-1631034-3",
+            "agency_affiliation": "2021-09-26"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 123,
+        "fields": {
+            "first_name": "Fernando",
+            "last_name": "Torrealba",
+            "birth_date": "1987-10-13",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "99-5727045-1",
+            "agency_affiliation": "2021-07-27"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 124,
+        "fields": {
+            "first_name": "Colton",
+            "last_name": "Salinas",
+            "birth_date": "1994-04-14",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "82-1442973-1",
+            "agency_affiliation": "2021-08-11"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 125,
+        "fields": {
+            "first_name": "Montel",
+            "last_name": "Payumo",
+            "birth_date": "1979-09-15",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "10-5366952-9",
+            "agency_affiliation": "2021-04-01"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 126,
+        "fields": {
+            "first_name": "Scott",
+            "last_name": "Villamar",
+            "birth_date": "1973-04-29",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "71-5399636-3",
+            "agency_affiliation": "2021-10-08"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 127,
+        "fields": {
+            "first_name": "Gaspard",
+            "last_name": "Mindoro",
+            "birth_date": "1976-03-13",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09202341123",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "56-1157527-7",
+            "agency_affiliation": "2021-05-29"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 128,
+        "fields": {
+            "first_name": "Ian",
+            "last_name": "Bana",
+            "birth_date": "1983-05-04",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09472800187",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "94-7774538-3",
+            "agency_affiliation": "2021-02-13"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 129,
+        "fields": {
+            "first_name": "Marcus",
+            "last_name": "Padilla",
+            "birth_date": "2001-08-02",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "12345678901",
+            "nbi_issued_date": null,
+            "phone_number": "09139686566",
+            "highest_education": 2,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "12-3456789-0",
+            "agency_affiliation": "2001-01-01"
+        }
+    },
+    {
+        "model": "security.guard",
+        "pk": 130,
+        "fields": {
+            "first_name": "Alex",
+            "last_name": "Suaco",
+            "birth_date": "2001-07-08",
+            "sex": "M",
+            "residence_address": "02 Javier St., Poblacion, San Juan, Batangas",
+            "nbi_clearance_id": "a9b9a0d9gd-a9g9ac9hdf",
+            "nbi_issued_date": null,
+            "phone_number": "09274937506",
+            "highest_education": 1,
+            "lesp_issued_date": "2022-08-09",
+            "sss": "13-4395945-2",
+            "agency_affiliation": "2022-08-05"
+        }
+    },
+    {
+        "model": "security.post",
+        "pk": 2,
+        "fields": {
+            "location": 3,
+            "place": "Main Entrance",
+            "remarks": null,
+            "is_armed": false
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 15,
+        "fields": {
+            "shift": 15,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 16,
+        "fields": {
+            "shift": 16,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 17,
+        "fields": {
+            "shift": 17,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 18,
+        "fields": {
+            "shift": 18,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 19,
+        "fields": {
+            "shift": 19,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 20,
+        "fields": {
+            "shift": 20,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 21,
+        "fields": {
+            "shift": 21,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 22,
+        "fields": {
+            "shift": 22,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 23,
+        "fields": {
+            "shift": 23,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 24,
+        "fields": {
+            "shift": 24,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 25,
+        "fields": {
+            "shift": 25,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 26,
+        "fields": {
+            "shift": 26,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 27,
+        "fields": {
+            "shift": 27,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    },
+    {
+        "model": "security.instruction",
+        "pk": 28,
+        "fields": {
+            "shift": 28,
+            "post": 2,
+            "number_of_guards": 2,
+            "designations": []
+        }
+    }
+]
