@@ -23,7 +23,9 @@ from datetime import datetime, timedelta, time
 class LandingView(View):
 	def get(self, request, *args, **kwargs):
 		if request.user.is_authenticated:
+			
 			if request.user.is_superuser:
+				
 				return redirect('contract-requests')
 			return redirect('home')
 
@@ -62,7 +64,7 @@ class LoginView(View):
 class LogoutView(View):
 	def get(self, request, *args, **kwargs):
 		logout(request)
-		return redirect('login')
+		return redirect('landing')
 
 class SignupView(View):
 	def get(self, request, *args, **kwargs):
