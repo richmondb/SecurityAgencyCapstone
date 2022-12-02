@@ -11,7 +11,7 @@ body {
 
 /* dashboard-nav related */
 
-.dash-nav {
+/* .dash-nav {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -22,7 +22,7 @@ body {
 	height: 60px;
 	width: 100%;
 	
-}
+} */
 
 /* ---------- end ---------- */
 
@@ -137,17 +137,14 @@ body {
 /* -------- end -------- */
 
 
-nav {
-	/*position: fixed;
-	top: 0;
-	left: 0;*/
+/* nav {
 	width: 100vw;
 	height: 150px;
 	display: flex;
 	flex-direction: column;
 	background: white;
 	
-}
+} */
 
 nav header {
 	grid-column: 1/-1;
