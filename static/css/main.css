@@ -27,6 +27,7 @@ ul.dropdown-menu.show {
 
 /* main screen */
 
+
 .wrapper {
 	margin-top: 80px;
 }
@@ -66,9 +67,10 @@ ul.dropdown-menu.show {
 .side-nav a {
 	color: white;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 600;
 	width: 100%;
-	padding: 24px 24px;
+	padding: 24px;
 }
 
 .side-nav a i {
@@ -311,9 +313,6 @@ body {
 .form-flex>div {
 	flex-grow: 1;
 }
-
-
-
 
 
 .form-submit {
@@ -699,6 +698,7 @@ section {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	align-items: center;
 	padding-bottom: 20px;
+	row-gap: 1rem;
 }
 
 .previous-draft {
