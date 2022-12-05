@@ -1,54 +1,56 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<div class="container-fluid">
-		<a class="navbar-brand abs" href="#">SECURITYY MANAGEMENT SYSTEM</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="{% url 'landing' %}">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact Us</a>
-				</li>
+{% load static %}
+<header>
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand text-white" href="/">
+				<img class="navbaricon" src="{% static 'css/icon.svg' %}" alt="logo"/>
+				SECURITY MANAGEMENT SYSTEM
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					{% url 'landing' as landing %}
+					<li class="nav-item {% if request.path == landing %}active{% endif %}">
+						<a class="nav-link" aria-current="page" href="{% url 'landing' %}">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
 
-			</ul>
-			<ul class="navbar-nav ms-auto" style="margin-right: 30px;">
-				<li class="nav-item dropdown">
-					{% if user.is_authenticated %}
+				</ul>
+				<ul class="navbar-nav ms-auto" style="margin-right: 30px;">
+					<li class="nav-item dropdown">
+						{% if user.is_authenticated %}
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Welcome {{user.username}}
+						</a>
 
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Welcome {{user.username}}
-					</a>
-
-					{% else %}
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-						aria-expanded="false">
-						Account
-					</a>
-					{% endif %}
-					<ul class="dropdown-menu">
-						{% if not user.is_authenticated %}
-						<li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
-						<li>
-							<hr class="dropdown-divider">
-						</li>
-						<li><a class="dropdown-item" href="{% url 'signup' %}">Signup</a></li>
 						{% else %}
-						<li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Account
+						</a>
 						{% endif %}
-					</ul>
-				</li>
-			</ul>
+						<ul class="dropdown-menu">
+							{% if not user.is_authenticated %}
+							<li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="{% url 'signup' %}">Signup</a></li>
+
+							{% else %}
+							<li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+							{% endif %}
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-</nav>
+	</nav>
+</header>
