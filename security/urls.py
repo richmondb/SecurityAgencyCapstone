@@ -10,6 +10,7 @@ urlpatterns = [
 
 	path('account/', AccountDetailsView.as_view(), name = "account"),
 	path('home/', HomeView.as_view(), name = "home"),
+	path('services/', ServicesView.as_view(), name = "services"),
 	path('contract/<int:pk>/full', ContractFullDetailView.as_view(), name = "contract-full-detail"),
 
 	path('active/', ActiveContractsView.as_view(), name = "active-contracts"),
