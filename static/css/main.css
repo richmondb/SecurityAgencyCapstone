@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #484848;
   outline: 1px solid slategrey;
@@ -44,14 +44,14 @@ ul.dropdown-menu.show {
 
 /* ---------- end ---------- */
 
-/* ============ desktop view ============ */
+/* ============ desktop onhover view ============ */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
+	/* .navbar .nav-item:hover .nav-link{   } */
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
-/* ============ desktop view .end// ============ */
+/* ============ desktop onhover view .end// ============ */
 
 
 /* main screen */

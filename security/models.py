@@ -693,7 +693,7 @@ class Instruction(models.Model):
 	@property
 	def is_active(self):
 
-		return designation.is_active()
+		return Designation.is_active()
 
 	@property
 	def guards_needed(self):
