@@ -6,21 +6,22 @@
 
 {% block content %}
 
-	{% include 'navbar.html' %}
+{% include 'navbar.html' %}
 
-	{% if messages %}
-		{% for message in messages %}
-		{{message}}
-		{% endfor %}
-	{% endif %}
+{% if messages %}
+{% for message in messages %}
+{{message}}
+{% endfor %}
+{% endif %}
 
 <!-- 1st home page showcase section -->
-<section class="text-light pt-5 pb-5 text-sm-start" style="background-image: url('static/css/983279.jpg');">
+<section class="text-light pt-5 pb-5 text-sm-start"
+	style="background-image: url('static/css/983279.jpg');background-attachment:fixed;background-size: cover;background-repeat: no-repeat;background-position:center;">
 	<div class="container-lg">
-		<div class="row justify-content-center align-items-center">
+		<div class="row justify-content-center align-items-center align-self-center">
 			<!-- gif display -->
-			<div class="col-md-5 text-center d-none d-md-block">
-				<img class="img-fluid mh-100" src="{% static 'css/protectionicon.gif' %}" alt="" style="width: 400px; height: 400px;">
+			<div class="col-md-5 text-center d-none d-md-block ">
+				<img class="img-fluid" src="{% static 'css/protectionicon.gif' %}" alt="">
 			</div>
 			<!-- text display -->
 			<div class="col-md-7 text-center text-md-start">
@@ -46,14 +47,15 @@
 					<div class="display-4">Contract Security <span class="text-primary">Guards</span></div>
 					<div class="display-6">Your Security Is Our <span class="text-primary">Priority</span></div>
 				</h1>
-				<p class="lead my-4">Delivering an efficient and seamless security guard management solution leading to improved operational efficiency, such as managing schedules and reports, guards, and clients.</p>
+				<p class="lead my-4">Delivering an efficient and seamless security guard management solution leading to
+					improved operational efficiency, such as managing schedules and reports, guards, and clients.</p>
 			</div>
 			<!-- gif display -->
 			<div class="col-md-5 text-center d-none d-md-block">
 				<img class="img-fluid d-none d-sm-block" src="{% static 'css/contract.gif' %}" alt="">
-			<div>
-		</div>
-	</div>
+				<div>
+				</div>
+			</div>
 </section>
 
 {% endblock %}
