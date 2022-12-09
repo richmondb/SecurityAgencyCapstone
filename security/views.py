@@ -317,6 +317,17 @@ class HomeView(LoginRequiredMixin, View):
 		}
 		return render(request, 'security/home.html', context)
 
+class ServicesView(View):
+	def get(self, request, *args, **kwargs):
+		if request.user.is_authenticated:
+			
+			if request.user.is_superuser:
+				
+				return redirect('contract-requests')
+			return redirect('home')
+
+		return render(request, 'security/services.html', {})
+
 
 
 class ContractRequestsView(View):

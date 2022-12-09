@@ -1,15 +1,59 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} SMD {% endblock %}
 
 
 {% block content %}
 
-{% include 'navbar.html' %}
+	{% include 'navbar.html' %}
 
-{% if messages %}
-	{% for message in messages %}
-	{{message}}
-	{% endfor %}
-{% endif %}
+	{% if messages %}
+		{% for message in messages %}
+		{{message}}
+		{% endfor %}
+	{% endif %}
+
+<!-- 1st home page showcase section -->
+<section class="text-light pt-5 pb-5 text-sm-start" style="background-image: url('static/css/983279.jpg');">
+	<div class="container-lg">
+		<div class="row justify-content-center align-items-center">
+			<!-- gif display -->
+			<div class="col-md-5 text-center d-none d-md-block">
+				<img class="img-fluid mh-100" src="{% static 'css/protectionicon.gif' %}" alt="" style="width: 400px; height: 400px;">
+			</div>
+			<!-- text display -->
+			<div class="col-md-7 text-center text-md-start">
+				<h1>
+					<div class="display-3">Your <span class="text-primary">Safety</span> Ally</div>
+					<div class="display-6">And Your <span class="text-primary">Security</span> Partner</div>
+				</h1>
+				<p class="lead my-4">It is designed to effectively organize the security guard industry that would be highly beneficial for any private patrol company or security agency.</p>
+				<a href="#" class="btn btn-primary btn-lg shadow-lg">Get Started</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- 2nd home page showcase section -->
+<section class="text-light text-sm-start">
+	<div class="container-lg">
+		<div class="row justify-content-center align-items-center">
+			<!-- text display -->
+			<div class="col-md-7 text-center text-md-end">
+				<h1>
+					<div class="display-4">Contract Security <span class="text-primary">Guards</span></div>
+					<div class="display-6">Your Security Is Our <span class="text-primary">Priority</span></div>
+				</h1>
+				<p class="lead my-4">Delivering an efficient and seamless security guard management solution leading to improved operational efficiency, such as managing schedules and reports, guards, and clients.</p>
+			</div>
+			<!-- gif display -->
+			<div class="col-md-5 text-center d-none d-md-block">
+				<img class="img-fluid d-none d-sm-block" src="{% static 'css/contract.gif' %}" alt="">
+			<div>
+		</div>
+	</div>
+</section>
+
 {% endblock %}
