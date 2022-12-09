@@ -15,6 +15,8 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item {% if request.path == '/' %}active{% endif %}">
 				<!-- Main page navigator section -->
 				<ul class="navbar-nav">
 					<!-- it is needed, for highlighting current page -->
@@ -32,7 +34,7 @@
 						<a class="nav-link" href="#">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact Us</a>
+						<a class="nav-link" href="#">Contact</a>
 					</li>
 				</ul>
 				<!-- Account navigator section -->
