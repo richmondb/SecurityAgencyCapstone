@@ -105,6 +105,27 @@ ul.dropdown-menu.show {
 
 /* ---------- end ---------- */
 
+/* --------section---------- */
+section {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 80px;
+}
+#sec_1{
+	height: calc(100vh - 130px);
+	margin-bottom: 0;
+}
+#sec_2 {
+	height: calc(100vh);
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+	#sec_1 {
+			height: calc(50vh - 141px);
+		}
+}
+/* ---------- end ---------- */
 
 /* Custom Button */
 .btn{
@@ -114,6 +135,10 @@ ul.dropdown-menu.show {
 /* ---------- end ---------- */
 
 /* ============ desktop onhover view ============ */
+
+.navbar{
+	--bs-navbar-padding-y:0.3rem;
+}
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu {
 		display: none;
@@ -559,11 +584,7 @@ tfoot {
 
 /* ----- section -------------- */
 
-section {
-	text-align: center;
-	font-size: 16px;
-	margin-bottom: 80px;
-}
+
 
 
 .contract-schedule-table {
