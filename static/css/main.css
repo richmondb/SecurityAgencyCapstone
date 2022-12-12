@@ -122,7 +122,10 @@ section {
 
 @media only screen and (max-width: 992px) {
 	#sec_1 {
-			height: calc(50vh - 141px);
+			height: calc(50vh - 125px);
+		}
+	#sec_2 {
+			height: calc(50vh);
 		}
 }
 /* ---------- end ---------- */
