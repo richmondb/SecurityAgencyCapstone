@@ -78,13 +78,10 @@ WSGI_APPLICATION = 'main.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'securityagency',
-        'USER': 'root',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-        'PORT': '3306',
         'OPTIONS': {
-            'charset': 'utf8mb4'  # This is the relevant line
+            # This is the relevant line
+            # set path to the mysql configuration file for connection
+            "read_default_file": os.path.join(BASE_DIR, 'main/auth/mysql_config/', 'conf.cnf'),
         }
     }
 }
@@ -120,7 +117,7 @@ AUTH_USER_MODEL = 'security.CustomUser'
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-AGENCY_NAME = "SIKYUrity Agency"
+AGENCY_NAME = "Security Agency"
 AGENCY_ADDRESS = "042 Javier St., Poblacion, San Juan, Batangas"
 ISSUING_OFFICER = "Riku Dola"
 
