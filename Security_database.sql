@@ -1,13 +1,12 @@
--- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
---
 -- Host: 127.0.0.1    Database: sikyuritydatabase
 -- ------------------------------------------------------
 -- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_SYSTEM=@@CHARACTER_SET_SYSTEM */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -728,3 +727,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2022-08-10 22:44:37
+
+SHOW SESSION VARIABLES LIKE 'character\_set\_%';
+show variables like 'char%';
