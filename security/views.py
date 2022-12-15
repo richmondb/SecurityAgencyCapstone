@@ -12,7 +12,6 @@ from django.views.generic.edit import UpdateView
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
-from django.contrib import messages
 from django.db.models import Q
 
 from .forms import *
