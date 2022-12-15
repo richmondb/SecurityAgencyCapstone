@@ -24,4 +24,4 @@
 
 # Framework & Library 
 [![Code style: djlint](https://img.shields.io/badge/html%20style-djlint-blue.svg)](https://www.djlint.com)
-[![Code style: djlint](https://img.shields.io/badge/Frontend-Boostrap-blueviolet)](https://www.djlint.com)
+[![Code style: djlint](https://img.shields.io/badge/Frontend-Boostrap-blueviolet)](https://getbootstrap.com)

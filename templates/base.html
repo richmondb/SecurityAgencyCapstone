@@ -1,32 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% block title %} {% endblock %}</title>
-	<link rel="icon" type="image/x-icon" href="{% static 'css/icon.svg' %}">
-	<link rel="stylesheet" href="{% static '/bootstrap-5.2.3-dist/css/bootstrap.min.css' %}" type="text/css">
-	<link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
-</head>
-
-<body class="bg-dark">
-
-
-	{% block content %}
-
-	{% endblock %}
-
-	<script src="{% static '/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js' %}"></script>
-	<script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+        <link rel="icon" type="image/x-icon" href="{% static 'css/icon.svg' %}">
+        <link rel="stylesheet"
+              href="{% static '/bootstrap-5.2.3-dist/css/bootstrap.min.css' %}"
+              type="text/css">
+        <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
+    </head>
+    <body class="bg-dark">
+        {% block content %}{% endblock %}
+        <script src="{% static '/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script>
 		function myfunct() {
 			$("#id_date").datepicker({
 				format: 'mm/dd/yyyy',
 			});
 		};
-	</script>
-
-</body>
-
+	
+        </script>
+    </body>
 </html>
