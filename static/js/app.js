@@ -24,7 +24,7 @@ particlesJS('particles-js',
         "value": "#ffffff"
       },
       "shape": {
-        "type": "star",
+        "type": ["polygon", "triangle"],
         "stroke": {
           "width": 0,
           "color": "#000000"
