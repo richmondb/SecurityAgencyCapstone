@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #c5c5c5;
-	min-width: 720px;
+	min-width: 390px;
 }
 
 body::-webkit-scrollbar {
@@ -109,6 +109,15 @@ ul.dropdown-menu.show {
 	right: 30px;
 }
 
+@media only screen and (max-width: 500px) {
+	.container-xs{
+		display: none!important;
+	}
+	.navbar{
+		padding: 1.5rem;
+	}
+}
+
 /* ---------- end ---------- */
 
 /* --------section---------- */
@@ -125,7 +134,7 @@ section {
 }
 
 #sec_2 {
-	height: calc(80vh);
+	height: 80vh;
 	margin-bottom: 0;
 }
 
