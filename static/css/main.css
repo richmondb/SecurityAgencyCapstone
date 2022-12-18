@@ -8,6 +8,8 @@ body {
 	padding: 0;
 	background: #c5c5c5;
 	min-width: 390px;
+	min-height: 720px;
+	overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -23,7 +25,9 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid slategrey;
 }
 
-
+header{
+	background-color: transparent;
+}
 
 @media (min-width: 992px) {
 	.right-edge {
@@ -95,14 +99,14 @@ ul.dropdown-menu.show {
 	color: #48c9ce;
 }
 
-.navbaricon {
+/* .navbaricon {
 	float: inline-start;
 	max-width: 50px;
 	min-width: 50px;
 	max-height: 50px;
 	min-height: 50px;
 	background: local;
-}
+} */
 
 .navbar-toggler {
 	position: relative;
@@ -118,6 +122,10 @@ ul.dropdown-menu.show {
 	}
 }
 
+.display-6{
+	margin-bottom:0 !important;
+}
+
 /* ---------- end ---------- */
 
 /* --------section---------- */
@@ -131,11 +139,13 @@ section {
 #sec_1 {
 	height: calc(100vh - 136px);
 	margin-bottom: 0;
+	min-height: 300px;
 }
 
 #sec_2 {
 	height: 80vh;
 	margin-bottom: 0;
+	min-height: 300px;
 }
 
 @media only screen and (max-width: 992px) {
