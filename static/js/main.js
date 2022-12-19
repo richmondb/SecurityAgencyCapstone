@@ -1,3 +1,12 @@
+// disable video on website right click
+var video = document.querySelectorAll('video');
+
+video.forEach(element => {
+    // Now do something with my button
+    element.setAttribute('oncontextmenu', "return false;");
+});
+
+
 // get div name
 let box = document.querySelector("header");
 // get element by id

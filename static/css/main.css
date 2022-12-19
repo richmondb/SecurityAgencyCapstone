@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid slategrey;
 }
 
-header{
+header {
 	background-color: transparent;
 }
 
@@ -33,7 +33,6 @@ header{
 	.right-edge {
 		position: absolute;
 		right: 2em;
-		/* height: calc(100vh - 150px); */
 	}
 }
 
@@ -99,6 +98,16 @@ ul.dropdown-menu.show {
 	color: #48c9ce;
 }
 
+.navbar-brand {
+	margin-left: 1em;
+	text-align: center;
+	align-content: center;
+	display: flex;
+	align-items: center;
+	column-gap: 0.5em;
+	font-size: calc(1.375vh + 14px);
+}
+
 /* .navbaricon {
 	float: inline-start;
 	max-width: 50px;
@@ -114,16 +123,17 @@ ul.dropdown-menu.show {
 }
 
 @media only screen and (max-width: 500px) {
-	.container-xs{
-		display: none!important;
+	.container-xs {
+		display: none !important;
 	}
-	.navbar{
+
+	.navbar {
 		padding: 1.5rem;
 	}
 }
 
-.display-6{
-	margin-bottom:0 !important;
+.display-6 {
+	margin-bottom: 0 !important;
 }
 
 /* ---------- end ---------- */
@@ -134,6 +144,10 @@ section {
 	text-align: center;
 	font-size: 16px;
 	margin-bottom: 80px;
+}
+
+.no-section {
+	margin-bottom: 0;
 }
 
 #sec_1 {
@@ -159,7 +173,7 @@ section {
 }
 
 /* Particles  */
-#particles-js{
+#particles-js {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -170,6 +184,7 @@ section {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
+
 /* ---------- end ---------- */
 
 /* ---------- footer ---------- */
@@ -177,7 +192,7 @@ footer {
 	position: relative;
 	bottom: 0;
 	width: 100%;
-	height: 300px;
+	/* height: 300px; */
 	background-color: black;
 }
 
