@@ -150,8 +150,8 @@ LOGIN_REDIRECT_URL = "/home/"
 
 # When trying to host to the internet this configures it to be allowable
 # can be remove later on
-ALLOWED_HOSTS = ['*','9953-112-200-100-125.ap.ngrok.io']
+ALLOWED_HOSTS = ['*','6e55-112-200-100-125.ap.ngrok.io']
 
 # csrf token is strict to we add the wesbite Origin 
 # can be remove later on
-CSRF_TRUSTED_ORIGINS = ['https://9953-112-200-100-125.ap.ngrok.io']
+CSRF_TRUSTED_ORIGINS = ['https://6e55-112-200-100-125.ap.ngrok.io']
