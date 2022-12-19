@@ -2,9 +2,9 @@
 <!-- General navbar -->
 <header>
 	<!-- Navigation bar -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark fs-5 border-bottom border-secondary ">
+	<nav class="navbar  navbar-expand-lg navbar-dark fs-5 border-bottom border-secondary glass ">
 		<div class="container-fluid d-flex ">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="{% url 'landing' %}">
 				<img src="{% static 'css/icon.svg' %}" alt="logo" width="40" height="40" class="d-inline-block align-top" />
 				SMD
 			</a>
@@ -47,9 +47,9 @@
 							Account
 						</a>
 						{% endif %}
-						<ul class="dropdown-menu text-center">
+						<ul class="dropdown-menu text-center" style="background-color:transparent!important">
 							{% if not user.is_authenticated %}
-							<li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
+							<li><a class="dropdown-item" href="{% url 'login' %}" >Login</a></li>
 							<li>
 								<hr class="dropdown-divider" />
 							</li>
