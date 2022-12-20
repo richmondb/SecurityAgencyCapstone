@@ -147,11 +147,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = "/home/"
 
-
+# !! values are refresh and should be replace with new
 # When trying to host to the internet this configures it to be allowable
-# can be remove later on
+# should be remove when deploy 
 ALLOWED_HOSTS = ['*','6e55-112-200-100-125.ap.ngrok.io']
 
 # csrf token is strict to we add the wesbite Origin 
-# can be remove later on
+# should be remove when deploy 
 CSRF_TRUSTED_ORIGINS = ['https://6e55-112-200-100-125.ap.ngrok.io']
