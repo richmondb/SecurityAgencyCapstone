@@ -2,7 +2,7 @@
 var video = document.querySelectorAll('video');
 
 video.forEach(element => {
-    // Now do something with my button
+    // Now do something
     element.setAttribute('oncontextmenu', "return false;");
     element.disablePictureInPicture = true;
 });
