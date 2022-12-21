@@ -26,6 +26,6 @@ admin.site.register(Instruction)
 admin.site.register(Guard)
 admin.site.register(DDO)
 admin.site.register(Firearm)
-admin.site.register(AgencyInformation)
+# admin.site.register(AgencyInformation) #remove unused database object
 admin.site.register(Designation)
 admin.site.register(FirearmAssignment)
