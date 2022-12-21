@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #c5c5c5;
+	background: var(--bs-body-color);
 	min-width: 390px;
 	min-height: 720px;
 	overflow-y: scroll;
@@ -23,10 +23,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
 	background-color: #484848;
 	outline: 1px solid slategrey;
-}
-
-header {
-	background-color: transparent;
 }
 
 @media (min-width: 992px) {
@@ -71,6 +67,9 @@ ul.dropdown-menu.show {
 	margin-top: 0.7rem;
 }
 
+header{
+	z-index: 999;
+}
 .navbar {
 	background-color: #484848;
 }
@@ -204,7 +203,7 @@ footer {
 .navbar {
 	--bs-navbar-padding-y: 0.3rem;
 	position: absolute;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	z-index: 99999;
 }
@@ -393,10 +392,6 @@ footer {
 
 
 /* ----------- ----------------*/
-
-body {
-	background: #ccc;
-}
 
 .main-panel {
 	grid: 2/ 1/-1;

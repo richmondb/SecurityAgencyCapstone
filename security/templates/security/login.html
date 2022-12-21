@@ -9,10 +9,13 @@
 <main>
 	{% if messages %}
 	{% for message in messages %}
-	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	{% comment %} <div class="mx-auto alert alert-warning alert-dismissible fade show" role="alert" style="width:50%;margin-top:5rem">
 		<strong>Holy guacamole!</strong> {{message}}
 		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	</div>
+	</div> {% endcomment %}
+	<script>
+		alert('Holy guacamole! {{message}} ');
+	</script>
 	{% endfor %}
 	{% endif %}
 	<form method = "POST">
