@@ -81,9 +81,13 @@ DATABASES = {
         "OPTIONS": {
             # This is the relevant line
             # set path to the mysql configuration file for connection
-            "read_default_file": os.path.join(
-                BASE_DIR, "main/auth/mysql_config/", "conf.cnf"
-            ),
+            # "read_default_file": os.path.join(
+            #     BASE_DIR, "main/auth/mysql_config/", "conf.cnf"
+            # ),
+            'user' : 'root',
+            'password' : '1234',
+            'database' : 'securityagency',
+            'charset' : 'utf8mb4',
         },
     }
 }
