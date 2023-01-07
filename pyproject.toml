@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "securityagencycapstone"
+version = "0.1.0"
+description = "A security management system"
+authors = ["richmondb <richmond.billones@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+black = "^22.12.0"
+django = "^4.1.5"
+mysqlclient = "^2.1.1"
+django-polymorphic = "^3.1.0"
+pillow = "^9.4.0"
+python-dateutil = "^2.8.2"
+six = "^1.16.0"
+tzdata = "^2022.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
