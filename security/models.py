@@ -53,6 +53,8 @@ def start_time():
     return datetime.now().date()
 
 
+# the agencyinformation table
+
 # class AgencyInformation(models.Model):
 # 	fa_validity = models.DateField()
 
